@@ -1,0 +1,31 @@
+C:\Users\Admin\Desktop\TTNT\MyApp\MyApp\bin\Debug\MyApp.exe.config
+C:\Users\Admin\Desktop\TTNT\MyApp\MyApp\bin\Debug\MyApp.exe
+C:\Users\Admin\Desktop\TTNT\MyApp\MyApp\bin\Debug\MyApp.pdb
+C:\Users\Admin\Desktop\TTNT\MyApp\MyApp\obj\Debug\MyApp.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\TTNT\MyApp\MyApp\obj\Debug\MyApp.frmCalculator.resources
+C:\Users\Admin\Desktop\TTNT\MyApp\MyApp\obj\Debug\MyApp.Properties.Resources.resources
+C:\Users\Admin\Desktop\TTNT\MyApp\MyApp\obj\Debug\MyApp.csproj.GenerateResource.Cache
+C:\Users\Admin\Desktop\TTNT\MyApp\MyApp\obj\Debug\MyApp.exe
+C:\Users\Admin\Desktop\TTNT\MyApp\MyApp\obj\Debug\MyApp.pdb
+C:\Users\Admin\Desktop\TTNT45K_03\MyApp\MyApp\bin\Debug\MyApp.exe.config
+C:\Users\Admin\Desktop\TTNT45K_03\MyApp\MyApp\obj\Debug\MyApp.exe
+C:\Users\Admin\Desktop\TTNT45K_03\MyApp\MyApp\obj\Debug\MyApp.pdb
+<<<<<<< HEAD
+C:\Users\trand\Documents\GitHub\TTNT45K_03\MyApp\MyApp\bin\Debug\MyApp.exe.config
+C:\Users\trand\Documents\GitHub\TTNT45K_03\MyApp\MyApp\bin\Debug\MyApp.exe
+C:\Users\trand\Documents\GitHub\TTNT45K_03\MyApp\MyApp\bin\Debug\MyApp.pdb
+C:\Users\trand\Documents\GitHub\TTNT45K_03\MyApp\MyApp\obj\Debug\MyApp.csproj.AssemblyReference.cache
+C:\Users\trand\Documents\GitHub\TTNT45K_03\MyApp\MyApp\obj\Debug\MyApp.frmCalculator.resources
+C:\Users\trand\Documents\GitHub\TTNT45K_03\MyApp\MyApp\obj\Debug\MyApp.Properties.Resources.resources
+C:\Users\trand\Documents\GitHub\TTNT45K_03\MyApp\MyApp\obj\Debug\MyApp.csproj.GenerateResource.cache
+C:\Users\trand\Documents\GitHub\TTNT45K_03\MyApp\MyApp\obj\Debug\MyApp.csproj.CoreCompileInputs.cache
+C:\Users\trand\Documents\GitHub\TTNT45K_03\MyApp\MyApp\obj\Debug\MyApp.exe
+C:\Users\trand\Documents\GitHub\TTNT45K_03\MyApp\MyApp\obj\Debug\MyApp.pdb
+=======
+C:\Users\Admin\Desktop\TTNT45K_03\MyApp\MyApp\bin\Debug\MyApp.exe
+C:\Users\Admin\Desktop\TTNT45K_03\MyApp\MyApp\bin\Debug\MyApp.pdb
+C:\Users\Admin\Desktop\TTNT45K_03\MyApp\MyApp\obj\Debug\MyApp.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\TTNT45K_03\MyApp\MyApp\obj\Debug\MyApp.frmCalculator.resources
+C:\Users\Admin\Desktop\TTNT45K_03\MyApp\MyApp\obj\Debug\MyApp.Properties.Resources.resources
+C:\Users\Admin\Desktop\TTNT45K_03\MyApp\MyApp\obj\Debug\MyApp.csproj.GenerateResource.Cache
+>>>>>>> 34eef2df77c0def25e93011d37bbd04f9e15fbf3
