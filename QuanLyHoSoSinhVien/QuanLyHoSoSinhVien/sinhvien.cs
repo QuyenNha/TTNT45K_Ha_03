@@ -282,17 +282,10 @@ namespace QuanLyHoSoSinhVien
 
             SqlCommand cmd = new SqlCommand(sQuery4, con);
             cmd.Parameters.AddWithValue("@MaSV", sMaSV);
-
-            
-            string sQuery = "Select * from SINHVIEN";
-            SqlDataAdapter adapter = new SqlDataAdapter(sQuery, con);
-
-            DataSet ds = new DataSet();
-
-            adapter.Fill(ds, "SinhVien");
-
-            dataGridView1.DataSource = ds.Tables["SinhVien"];
-            con.Close();
+            SqlDataReader dr = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Load(dr);
+            dataGridView1.DataSource = dt;
         }
         private void button2_Click(object sender, EventArgs e)
         {
