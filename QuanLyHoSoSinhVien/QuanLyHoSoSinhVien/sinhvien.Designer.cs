@@ -93,7 +93,6 @@ namespace QuanLyHoSoSinhVien
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Sinh viên";
             this.tabPage1.UseVisualStyleBackColor = true;
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // textBox7
             // 
@@ -101,7 +100,6 @@ namespace QuanLyHoSoSinhVien
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(183, 23);
             this.textBox7.TabIndex = 47;
-            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged_3);
             // 
             // button2
             // 
@@ -131,7 +129,6 @@ namespace QuanLyHoSoSinhVien
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(183, 23);
             this.textBox6.TabIndex = 43;
-            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // label8
             // 
@@ -180,7 +177,6 @@ namespace QuanLyHoSoSinhVien
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(183, 23);
             this.textBox1.TabIndex = 1;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox2
             // 
@@ -267,7 +263,6 @@ namespace QuanLyHoSoSinhVien
             this.dateTimePicker1.Size = new System.Drawing.Size(183, 23);
             this.dateTimePicker1.TabIndex = 3;
             this.dateTimePicker1.Value = new System.DateTime(2001, 1, 1, 0, 0, 0, 0);
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged_1);
             // 
             // dataGridView1
             // 
@@ -278,7 +273,6 @@ namespace QuanLyHoSoSinhVien
             this.dataGridView1.Size = new System.Drawing.Size(807, 267);
             this.dataGridView1.TabIndex = 32;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // comboBox1
             // 
@@ -290,7 +284,6 @@ namespace QuanLyHoSoSinhVien
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(183, 23);
             this.comboBox1.TabIndex = 4;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // button12
             // 

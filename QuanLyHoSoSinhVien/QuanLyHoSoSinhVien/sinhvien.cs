@@ -17,27 +17,6 @@ namespace QuanLyHoSoSinhVien
         {
             InitializeComponent();
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void button14_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -57,12 +36,6 @@ namespace QuanLyHoSoSinhVien
         {
             this.Close();
         }
-
-        private void textBox7_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void quanly_Load(object sender, EventArgs e)
         {
             //Bước 1
@@ -88,7 +61,6 @@ namespace QuanLyHoSoSinhVien
 
             con.Close();
         }
-
         private void button11_Click(object sender, EventArgs e)
         {
             //Bước 1
@@ -142,32 +114,6 @@ namespace QuanLyHoSoSinhVien
             dataGridView1.DataSource = ds.Tables["SinhVien"];
             con.Close();
         }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button9_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(sCon);
@@ -229,14 +175,6 @@ namespace QuanLyHoSoSinhVien
             comboBox1.Text = dataGridView1.Rows[e.RowIndex].Cells["GioiTinh"].Value.ToString();
             dateTimePicker1.Value = Convert.ToDateTime(dataGridView1.Rows[e.RowIndex].Cells["NgaySinh"].Value);
             textBox1.Enabled = false;
-        }
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-        }
-
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-
         }
         private void button10_Click(object sender, EventArgs e)
         {
@@ -327,42 +265,35 @@ namespace QuanLyHoSoSinhVien
             dataGridView1.DataSource = ds.Tables["SinhVien"];
             con.Close();
         }
-
-        private void textBox7_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox7_TextChanged_2(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click_2(object sender, EventArgs e)
         {
-            //Bước 1
             SqlConnection con = new SqlConnection(sCon);
+            try
+            {
+                con.Open();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Xảy ra lỗi trong quá trình kết nối DB");
+            }
             string sMaSV = textBox7.Text;
-            string sQuery= "Select * from SINHVIEN where MaSV = @MaSV";
+            
+            string sQuery4 = " SELECT * from sinhvien where MaSV = @MaSV";
 
-            SqlCommand cmd = new SqlCommand(sQuery, con);
+            SqlCommand cmd = new SqlCommand(sQuery4, con);
             cmd.Parameters.AddWithValue("@MaSV", sMaSV);
 
+            
+            string sQuery = "Select * from SINHVIEN";
             SqlDataAdapter adapter = new SqlDataAdapter(sQuery, con);
 
             DataSet ds = new DataSet();
 
             adapter.Fill(ds, "SinhVien");
 
-            dataGridView1.DataSource = ds.Tables["Select * from SINHVIEN where MaSV = @MaSV"];
-            cmd.Parameters.AddWithValue("@MaSV", sMaSV);
+            dataGridView1.DataSource = ds.Tables["SinhVien"];
             con.Close();
         }
-
-        private void textBox7_TextChanged_3(object sender, EventArgs e)
-        {
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             //Làm trống ô nhập
@@ -384,10 +315,6 @@ namespace QuanLyHoSoSinhVien
             adapter.Fill(ds, "SinhVien");
             dataGridView1.DataSource = ds.Tables["SinhVien"];
             con.Close();
-        }
-
-        private void dateTimePicker1_ValueChanged_1(object sender, EventArgs e)
-        {
         }
     }
 }
