@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\trand\\source\\repos\\QuanLyHoSoSinhVien\\QuanLyHoSoSinhVien\\QuanLyHoSoSinhVien.csproj": {}
+    "C:\\Users\\trand\\Documents\\GitHub\\TTNT45K_Ha_03\\QuanLyHoSoSinhVien\\QuanLyHoSoSinhVien\\QuanLyHoSoSinhVien.csproj": {}
   },
   "projects": {
-    "C:\\Users\\trand\\source\\repos\\QuanLyHoSoSinhVien\\QuanLyHoSoSinhVien\\QuanLyHoSoSinhVien.csproj": {
+    "C:\\Users\\trand\\Documents\\GitHub\\TTNT45K_Ha_03\\QuanLyHoSoSinhVien\\QuanLyHoSoSinhVien\\QuanLyHoSoSinhVien.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\trand\\source\\repos\\QuanLyHoSoSinhVien\\QuanLyHoSoSinhVien\\QuanLyHoSoSinhVien.csproj",
+        "projectUniqueName": "C:\\Users\\trand\\Documents\\GitHub\\TTNT45K_Ha_03\\QuanLyHoSoSinhVien\\QuanLyHoSoSinhVien\\QuanLyHoSoSinhVien.csproj",
         "projectName": "QuanLyHoSoSinhVien",
-        "projectPath": "C:\\Users\\trand\\source\\repos\\QuanLyHoSoSinhVien\\QuanLyHoSoSinhVien\\QuanLyHoSoSinhVien.csproj",
+        "projectPath": "C:\\Users\\trand\\Documents\\GitHub\\TTNT45K_Ha_03\\QuanLyHoSoSinhVien\\QuanLyHoSoSinhVien\\QuanLyHoSoSinhVien.csproj",
         "packagesPath": "C:\\Users\\trand\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\trand\\source\\repos\\QuanLyHoSoSinhVien\\QuanLyHoSoSinhVien\\obj\\",
+        "outputPath": "C:\\Users\\trand\\Documents\\GitHub\\TTNT45K_Ha_03\\QuanLyHoSoSinhVien\\QuanLyHoSoSinhVien\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -43,6 +43,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -61,7 +67,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
