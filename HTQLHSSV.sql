@@ -13,8 +13,8 @@ Select * from TAIKHOAN
 --Bảng KHOA
 Create Table KHOA (TenKhoa nvarchar(50) not null primary key,
 DiaChi nvarchar(150) not null,
-DienThoaiKhoa char(11) not null)
-Insert into KHOA(TenKhoa,DiaChi,DienThoaiKhoa)
+DienThoai char(11) not null)
+Insert into KHOA(TenKhoa,DiaChi,DienThoai)
 Values
 (N'Thống kê - Tin học',N'Khoa TK-TH, Tầng 6, Tòa nhà Đa năng, Trường ĐHKT-ĐHĐN','05113910885'),
 (N'Marketing',N'Khoa Marketing, Tầng 6, Tòa nhà Đa năng, Trường ĐHKT-ĐHĐN','02363525358'),
@@ -69,11 +69,11 @@ Create Table SINHVIEN (MaSV char(12) not null primary key,
 HoTen nvarchar(50) not null,
 NgaySinh Date not null,
 GioiTinh nvarchar(10) not null,
-Diachi nvarchar(120),
+DiaChi nvarchar(120),
 DienThoai char(10) not null,
 MaLop char(7) not null,
 Constraint FK_MaLop Foreign Key (MaLop) References LOPSH(MaLop))
-Insert into SINHVIEN(MaSV,HoTen,NgaySinh,GioiTinh,Diachi,DienThoai,MaLop)
+Insert into SINHVIEN(MaSV,HoTen,NgaySinh,GioiTinh,DiaChi,DienThoai,MaLop)
 Values
 ('191121601102',N'Nguyễn Văn Thanh',N'2001-01-13',N'Nam',N'Đà Nẵng','0978745767','45K01'),
 ('191121703455',N'Nguyễn Thị Thanh Thảo',N'2001-11-20',N'Nữ',N'Đà Nẵng','0832413797','45K03'),
