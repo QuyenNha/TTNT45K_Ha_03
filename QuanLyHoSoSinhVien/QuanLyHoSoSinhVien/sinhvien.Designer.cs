@@ -184,6 +184,7 @@ namespace QuanLyHoSoSinhVien
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(183, 23);
             this.textBox2.TabIndex = 2;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label7
             // 
@@ -288,7 +289,7 @@ namespace QuanLyHoSoSinhVien
             // button12
             // 
             this.button12.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button12.Location = new System.Drawing.Point(174, 310);
+            this.button12.Location = new System.Drawing.Point(181, 310);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(75, 45);
             this.button12.TabIndex = 11;

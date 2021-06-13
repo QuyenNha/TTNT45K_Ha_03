@@ -309,5 +309,10 @@ namespace QuanLyHoSoSinhVien
             dataGridView1.DataSource = ds.Tables["SinhVien"];
             con.Close();
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

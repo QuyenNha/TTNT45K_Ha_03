@@ -72,14 +72,14 @@ namespace QuanLyHoSoSinhVien
             // thôngTinToolStripMenuItem
             // 
             this.thôngTinToolStripMenuItem.Name = "thôngTinToolStripMenuItem";
-            this.thôngTinToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
-            this.thôngTinToolStripMenuItem.Text = "Thông tin tài khoản";
+            this.thôngTinToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.thôngTinToolStripMenuItem.Text = "Đổi mật khẩu";
             this.thôngTinToolStripMenuItem.Click += new System.EventHandler(this.thôngTinToolStripMenuItem_Click);
             // 
             // tàiKhoảnToolStripMenuItem
             // 
             this.tàiKhoảnToolStripMenuItem.Name = "tàiKhoảnToolStripMenuItem";
-            this.tàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
+            this.tàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.tàiKhoảnToolStripMenuItem.Text = "Đăng xuất";
             this.tàiKhoảnToolStripMenuItem.Click += new System.EventHandler(this.tàiKhoảnToolStripMenuItem_Click);
             // 

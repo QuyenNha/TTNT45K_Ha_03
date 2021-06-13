@@ -7,11 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Data.SqlClient;
 namespace QuanLyHoSoSinhVien
 {
     public partial class flogin : Form
     {
+        string sCon = "Data Source=DESKTOP-EFQDFTG\\TDH;Initial Catalog=QLHSSV;Integrated Security=True";
         public flogin()
         {
             InitializeComponent();
@@ -67,10 +68,33 @@ namespace QuanLyHoSoSinhVien
 
         private void buttonlogin_Click(object sender, EventArgs e)
         {
-            fmain f = new fmain();
-            this.Hide();
-            f.ShowDialog();
-            this.Show();
+            SqlConnection con = new SqlConnection(sCon);
+            try
+            {
+                con.Open();
+                string tk = textBoxusername.Text;
+                string mk = textpass.Text;
+                string sql = "select *from TAIKHOAN where TaiKhoan ='"+tk+"' and MatKhau='"+mk+"'";
+                SqlCommand cmd = new SqlCommand(sql, con);
+                SqlDataReader dta = cmd.ExecuteReader();
+                if (dta.Read()==true)
+                {
+                    fmain f = new fmain();
+                    this.Hide();
+                    f.ShowDialog();
+                    this.Show();
+                }    
+                else
+                {
+                    MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu!");
+                    textBoxusername.Text = "";
+                    textpass.Text = "";
+                }    
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Xảy ra lỗi trong quá trình kết nối DB");
+            }
         }
     }
 }
