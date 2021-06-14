@@ -87,8 +87,8 @@ Values
 ('191121514120',N'Chế Thị Nhã Quyên',N'2001-07-31',N'Nữ',N'Huế','0344463107','45K14')
 Select * from SINHVIEN
 
---Bảng HOCPHAN
-Create Table MONHOC (MaMH char(70) not null primary key,
+--Bảng MONPHAN
+Create Table MONHOC (MaMH char(7) not null primary key,
 TenMH nvarchar(100) not null,
 TinChi int,
 TenKhoa nvarchar (50) not null,
