@@ -108,9 +108,30 @@ Values
 ('191121514120','45K14',10)
 Select * from DIEMSV
 
+--Bảng HOCPHAN
+Create Table HOCPHAN (MaHP char(70) not null primary key,
+TenHP nvarchar(100) not null,
+TinChi int,
+TenKhoa nvarchar (50) not null,
+Constraint FK_TenKhoa1 Foreign key (TenKhoa) References KHOA(TenKhoa))
+Insert into HOCPHAN(MaHP,TenHP,TinChi,TenKhoa)
+Values
+('HOS3010',N'An ninh và an toàn trong khách sạn',2,N'Du lịch'),
+('MIS3006',N'Cấu trúc dữ liệu và giải thuật',3,N'Thống kê - Tin học'),
+('MKT3004',N'Chiến lược marketing',3,N'Marketing'),
+('SMT3008',N'Tổ chức bộ máy hành chính Nhà nước',3,N'Lý luận chính trị'),
+('HRM3001',N'Quản trị nguồn nhân lực',3,N'Quản trị kinh doanh'),
+('LAW3030',N'Luật luật sư',2,N'Luật'),
+('BAN3001',N'Định giá tài sản',3,N'Tài chính'),
+('COM3002',N'Quản trị bán lẻ',3,N'Thương mại điện tử'),
+('ACC1001',N'Nguyên lý kế toán',3,N'Kế toán'),
+('MIS3005',N'Toán rời rạc',3,N'Thống kê - Tin học')
+Select * from HOCPHAN
+
 --Xem bảng
 Select * from TAIKHOAN
 Select * from KHOA
 Select * from LOPSH
 Select * from SINHVIEN
 Select * from DIEMSV
+Select * from HOCPHAN
