@@ -72,19 +72,20 @@ GioiTinh nvarchar(10) not null,
 DiaChi nvarchar(120),
 DienThoai char(10) not null,
 MaLop char(7) not null,
+DiemTB float
 Constraint FK_MaLop Foreign Key (MaLop) References LOPSH(MaLop))
-Insert into SINHVIEN(MaSV,HoTen,NgaySinh,GioiTinh,DiaChi,DienThoai,MaLop)
+Insert into SINHVIEN(MaSV,HoTen,NgaySinh,GioiTinh,DiaChi,DienThoai,MaLop,DiemTB)
 Values
-('191121601102',N'Nguyễn Văn Thanh',N'2001-01-13',N'Nam',N'Đà Nẵng','0978745767','45K01'),
-('191121703455',N'Nguyễn Thị Thanh Thảo',N'2001-11-20',N'Nữ',N'Đà Nẵng','0832413797','45K03'),
-('191121505133',N'Hoàng Trung Hiếu',N'2000-10-23',N'Nam',N'Quảng Trị','0345675123','45K05'),
-('191121407102',N'Trương Thị Thanh Huyền',N'2001-04-05',N'Nữ',N'Hà Tĩnh','0373467132','45K07'),
-('191122015124',N'Trần Thị Thanh Nhã',N'2001-11-25',N'Nữ',N'Quảng Ngãi','0349716160','45K15'),
-('191121317123',N'Nguyễn Thị Thanh Bình',N'2001-03-03',N'Nữ',N'Quảng Nam','0345675505','45K17'),
-('191121521209',N'Trần Thị Kim Liên',N'2001-02-10',N'Nữ',N'Gia Lai','0969296103','45K21'),
-('191124022252',N'Tôn Thất Nhật Tôn',N'2001-06-07',N'Nam',N'Quảng Bình','0363450172','45K22'),
-('191121514108',N'Trần Đỗ Hòa',N'2001-07-09',N'Nam',N'Huế','0762548324','45K14'),
-('191121514120',N'Chế Thị Nhã Quyên',N'2001-07-31',N'Nữ',N'Huế','0344463107','45K14')
+('191121601102',N'Nguyễn Văn Thanh',N'2001-01-13',N'Nam',N'Đà Nẵng','0978745767','45K01',9),
+('191121703455',N'Nguyễn Thị Thanh Thảo',N'2001-11-20',N'Nữ',N'Đà Nẵng','0832413797','45K03',9),
+('191121505133',N'Hoàng Trung Hiếu',N'2000-10-23',N'Nam',N'Quảng Trị','0345675123','45K05',9),
+('191121407102',N'Trương Thị Thanh Huyền',N'2001-04-05',N'Nữ',N'Hà Tĩnh','0373467132','45K07',9),
+('191122015124',N'Trần Thị Thanh Nhã',N'2001-11-25',N'Nữ',N'Quảng Ngãi','0349716160','45K15',9),
+('191121317123',N'Nguyễn Thị Thanh Bình',N'2001-03-03',N'Nữ',N'Quảng Nam','0345675505','45K17',9),
+('191121521209',N'Trần Thị Kim Liên',N'2001-02-10',N'Nữ',N'Gia Lai','0969296103','45K21',9),
+('191124022252',N'Tôn Thất Nhật Tôn',N'2001-06-07',N'Nam',N'Quảng Bình','0363450172','45K22',9),
+('191121514108',N'Trần Đỗ Hòa',N'2001-07-09',N'Nam',N'Huế','0762548324','45K14',9),
+('191121514120',N'Chế Thị Nhã Quyên',N'2001-07-31',N'Nữ',N'Huế','0344463107','45K14',9)
 Select * from SINHVIEN
 
 --Bảng MONPHAN
@@ -107,32 +108,9 @@ Values
 ('MIS3005',N'Toán rời rạc',3,N'Thống kê - Tin học')
 Select * from MONHOC
 
---Bảng DIEMSINHVIEN
-Create Table DIEMSV (MaSV char(12) not null, 
-MaLop char(7) not null,
-DiemTB float
-primary key (MaSV,MaLop),
-Constraint FK_MaSV Foreign Key (MaSV) References SINHVIEN(MaSV),
-Constraint FK_MaLop1 Foreign Key (MaLop) References LOPSH(MaLop))
-Insert into DIEMSV(MaSV,MaLop,DiemTB)
-Values
-('191121601102','45K01',8.4),
-('191121703455','45K03',8.8),
-('191121505133','45K05',8.0),
-('191121407102','45K07',9.2),
-('191122015124','45K15',7.5),
-('191121317123','45K17',9.8),
-('191121521209','45K21',7.8),
-('191124022252','45K22',6.7),
-('191121514108','45K14',10),
-('191121514120','45K14',10)
-Select * from DIEMSV
-
 --Xem bảng
 Select * from TAIKHOAN
 Select * from KHOA
 Select * from LOPSH
 Select * from SINHVIEN
 Select * from MONHOC
-Select * from DIEMSV
-
