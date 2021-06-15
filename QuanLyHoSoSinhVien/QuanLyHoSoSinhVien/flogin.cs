@@ -52,49 +52,42 @@ namespace QuanLyHoSoSinhVien
         {
 
         }
-
-        private void buttonexit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void flogin_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (MessageBox.Show("Bạn có thật sự muốn thoát chương trình?", "Thông báo", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
-                {
-                e.Cancel = true;
-            }
-        }
-
         private void buttonlogin_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(sCon);
-            try
             {
-                con.Open();
-                string tk = textBoxusername.Text;
-                string mk = textpass.Text;
-                string sql = "select *from TAIKHOAN where TaiKhoan ='"+tk+"' and MatKhau='"+mk+"'";
-                SqlCommand cmd = new SqlCommand(sql, con);
-                SqlDataReader dta = cmd.ExecuteReader();
-                if (dta.Read()==true)
+                SqlConnection con = new SqlConnection(sCon);
+                try
                 {
-                    fmain f = new fmain();
-                    this.Hide();
-                    f.ShowDialog();
-                    this.Show();
-                }    
-                else
+                    con.Open();
+                    string tk = textBoxusername.Text;
+                    string mk = textpass.Text;
+                    string sql = "select *from TAIKHOAN where TaiKhoan ='" + tk + "' and MatKhau='" + mk + "'";
+                    SqlCommand cmd = new SqlCommand(sql, con);
+                    SqlDataReader dta = cmd.ExecuteReader();
+                    if (dta.Read() == true)
+                    {
+                        FormMainMenu f = new FormMainMenu();
+                        this.Hide();
+                        f.ShowDialog();
+                        this.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu!");
+                        textBoxusername.Text = "";
+                        textpass.Text = "";
+                    }
+                }
+                catch (Exception ex)
                 {
-                    MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu!");
-                    textBoxusername.Text = "";
-                    textpass.Text = "";
-                }    
+                    MessageBox.Show("Xảy ra lỗi trong quá trình kết nối DB");
+                }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Xảy ra lỗi trong quá trình kết nối DB");
-            }
+        }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

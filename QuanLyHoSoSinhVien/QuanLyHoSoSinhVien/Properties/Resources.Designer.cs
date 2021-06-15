@@ -63,6 +63,16 @@ namespace QuanLyHoSoSinhVien.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_delete_16 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_delete_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Logo_Kinh_tế_Đà_Nẵng {
             get {
                 object obj = ResourceManager.GetObject("Logo_Kinh_tế_Đà_Nẵng", resourceCulture);
@@ -106,6 +116,16 @@ namespace QuanLyHoSoSinhVien.Properties {
         internal static System.Drawing.Bitmap Untitled11 {
             get {
                 object obj = ResourceManager.GetObject("Untitled11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Untitled2 {
+            get {
+                object obj = ResourceManager.GetObject("Untitled2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
