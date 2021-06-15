@@ -54,10 +54,17 @@ namespace QuanLyHoSoSinhVien
         }
         private void buttonlogin_Click(object sender, EventArgs e)
         {
+            if (this.textBoxusername.TextLength == 0 || this.textpass.TextLength == 0)
+            {
+                MessageBox.Show("Bạn vui lòng điền đầy đủ thông tin!", "THÔNG BÁO", MessageBoxButtons.OK);
+            }
+
+            else
             {
                 SqlConnection con = new SqlConnection(sCon);
                 try
                 {
+
                     con.Open();
                     string tk = textBoxusername.Text;
                     string mk = textpass.Text;
@@ -75,7 +82,6 @@ namespace QuanLyHoSoSinhVien
                     {
                         MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu!");
                         textBoxusername.Text = "";
-                        textpass.Text = "";
                     }
                 }
                 catch (Exception ex)
@@ -90,4 +96,6 @@ namespace QuanLyHoSoSinhVien
             Application.Exit();
         }
     }
-}
+
+    }
+

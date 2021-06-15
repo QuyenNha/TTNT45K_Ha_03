@@ -90,23 +90,24 @@ namespace QuanLyHoSoSinhVien
         {
             OpenChildForm(new Forms.SinhVien(), sender);
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void btnLop_Click(object sender, EventArgs e)
         {
+            OpenChildForm(new Forms.Lop(), sender);
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
+            OpenChildForm(new Forms.Khoa(), sender);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            OpenChildForm(new Forms.MonHoc(), sender);
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-        }
 
+        }
         private void Reset()
         {
             DisableButton();
@@ -174,5 +175,6 @@ namespace QuanLyHoSoSinhVien
             else
                 this.WindowState = FormWindowState.Normal;
         }
+
     }
 }

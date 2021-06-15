@@ -1,7 +1,7 @@
 ﻿
 namespace QuanLyHoSoSinhVien.Forms
 {
-    partial class Lop
+    partial class Khoa
     {
         /// <summary>
         /// Required designer variable.
@@ -34,14 +34,14 @@ namespace QuanLyHoSoSinhVien.Forms
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -90,25 +90,15 @@ namespace QuanLyHoSoSinhVien.Forms
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(55, 157);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 28);
-            this.label3.TabIndex = 112;
-            this.label3.Text = "Tên Khoa:";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(55, 97);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 28);
+            this.label2.Size = new System.Drawing.Size(78, 28);
             this.label2.TabIndex = 111;
-            this.label2.Text = "Tên Lớp:";
+            this.label2.Text = "Địa Chỉ:";
             // 
             // label1
             // 
@@ -116,9 +106,9 @@ namespace QuanLyHoSoSinhVien.Forms
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(55, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 28);
+            this.label1.Size = new System.Drawing.Size(95, 28);
             this.label1.TabIndex = 110;
-            this.label1.Text = "Mã Lớp:";
+            this.label1.Text = "Tên Khoa:";
             // 
             // dataGridView1
             // 
@@ -129,39 +119,6 @@ namespace QuanLyHoSoSinhVien.Forms
             this.dataGridView1.Size = new System.Drawing.Size(804, 323);
             this.dataGridView1.TabIndex = 109;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Kinh doanh quốc tế",
-            "Quản trị kinh doanh",
-            "Du lịch",
-            "Kinh tế",
-            "Thống kê - Tin học",
-            "Kế toán",
-            "Ngân hàng",
-            "Thương mại điện tử",
-            "Lý luận chính trị",
-            "Marketing",
-            "Luật",
-            "Thống kê - Tin học",
-            "Tài chính",
-            "Tài chính",
-            "Quản trị kinh doanh",
-            "Kế toán",
-            "Marketing",
-            "Kinh tế",
-            "Thống kê - Tin học",
-            "Thương mại điện tử",
-            "Du lịch",
-            "Quản trị kinh doanh",
-            "Du lịch",
-            "Lý luận chính trị"});
-            this.comboBox1.Location = new System.Drawing.Point(222, 162);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(183, 23);
-            this.comboBox1.TabIndex = 100;
             // 
             // button12
             // 
@@ -199,11 +156,29 @@ namespace QuanLyHoSoSinhVien.Forms
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
-            // Lop
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(55, 157);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(109, 28);
+            this.label3.TabIndex = 112;
+            this.label3.Text = "Điện Thoại:";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(222, 157);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(183, 23);
+            this.textBox3.TabIndex = 118;
+            // 
+            // Khoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(914, 679);
+            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.textBox2);
@@ -213,13 +188,12 @@ namespace QuanLyHoSoSinhVien.Forms
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button10);
-            this.Name = "Lop";
-            this.Text = "Lop";
-            this.Load += new System.EventHandler(this.Lop_Load);
+            this.Name = "Khoa";
+            this.Text = "930, 718";
+            this.Load += new System.EventHandler(this.Khoa_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -232,13 +206,13 @@ namespace QuanLyHoSoSinhVien.Forms
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }

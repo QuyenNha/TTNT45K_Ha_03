@@ -33,7 +33,6 @@ namespace QuanLyHoSoSinhVien
             this.panelLogo = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.btnCaiDat = new System.Windows.Forms.Button();
             this.btnThongKe = new System.Windows.Forms.Button();
             this.btnHocPhan = new System.Windows.Forms.Button();
             this.btnKhoa = new System.Windows.Forms.Button();
@@ -85,7 +84,6 @@ namespace QuanLyHoSoSinhVien
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panelMenu.Controls.Add(this.btnCaiDat);
             this.panelMenu.Controls.Add(this.btnThongKe);
             this.panelMenu.Controls.Add(this.btnHocPhan);
             this.panelMenu.Controls.Add(this.btnKhoa);
@@ -97,25 +95,6 @@ namespace QuanLyHoSoSinhVien
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(200, 761);
             this.panelMenu.TabIndex = 0;
-            // 
-            // btnCaiDat
-            // 
-            this.btnCaiDat.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCaiDat.FlatAppearance.BorderSize = 0;
-            this.btnCaiDat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCaiDat.Font = new System.Drawing.Font("UTM Avo", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnCaiDat.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnCaiDat.Image = ((System.Drawing.Image)(resources.GetObject("btnCaiDat.Image")));
-            this.btnCaiDat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCaiDat.Location = new System.Drawing.Point(0, 403);
-            this.btnCaiDat.Name = "btnCaiDat";
-            this.btnCaiDat.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnCaiDat.Size = new System.Drawing.Size(200, 60);
-            this.btnCaiDat.TabIndex = 6;
-            this.btnCaiDat.Text = "  Cài Đặt";
-            this.btnCaiDat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCaiDat.UseVisualStyleBackColor = true;
-            this.btnCaiDat.Click += new System.EventHandler(this.btnCaiDat_Click);
             // 
             // btnThongKe
             // 
@@ -150,7 +129,7 @@ namespace QuanLyHoSoSinhVien
             this.btnHocPhan.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.btnHocPhan.Size = new System.Drawing.Size(200, 60);
             this.btnHocPhan.TabIndex = 4;
-            this.btnHocPhan.Text = "  Học Phần";
+            this.btnHocPhan.Text = "  Môn Học";
             this.btnHocPhan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHocPhan.UseVisualStyleBackColor = true;
             this.btnHocPhan.Click += new System.EventHandler(this.button3_Click);
@@ -191,7 +170,7 @@ namespace QuanLyHoSoSinhVien
             this.btnLop.Text = "  Lớp";
             this.btnLop.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLop.UseVisualStyleBackColor = true;
-            this.btnLop.Click += new System.EventHandler(this.button1_Click);
+            this.btnLop.Click += new System.EventHandler(this.btnLop_Click);
             // 
             // btnSinhVien
             // 
@@ -404,6 +383,5 @@ namespace QuanLyHoSoSinhVien
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button btnCaiDat;
     }
 }

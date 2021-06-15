@@ -459,11 +459,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\trand\\Documents\\GitHub\\TTNT45K_Ha_03\\QuanLyHoSoSinhVien\\QuanLyHoSoSinhVien\\QuanLyHoSoSinhVien.csproj",
+      "projectUniqueName": "C:\\Users\\trand\\Desktop\\TTNT45K_Ha_03\\QuanLyHoSoSinhVien\\QuanLyHoSoSinhVien\\QuanLyHoSoSinhVien.csproj",
       "projectName": "QuanLyHoSoSinhVien",
-      "projectPath": "C:\\Users\\trand\\Documents\\GitHub\\TTNT45K_Ha_03\\QuanLyHoSoSinhVien\\QuanLyHoSoSinhVien\\QuanLyHoSoSinhVien.csproj",
+      "projectPath": "C:\\Users\\trand\\Desktop\\TTNT45K_Ha_03\\QuanLyHoSoSinhVien\\QuanLyHoSoSinhVien\\QuanLyHoSoSinhVien.csproj",
       "packagesPath": "C:\\Users\\trand\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\trand\\Documents\\GitHub\\TTNT45K_Ha_03\\QuanLyHoSoSinhVien\\QuanLyHoSoSinhVien\\obj\\",
+      "outputPath": "C:\\Users\\trand\\Desktop\\TTNT45K_Ha_03\\QuanLyHoSoSinhVien\\QuanLyHoSoSinhVien\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\trand\\AppData\\Roaming\\NuGet\\NuGet.Config",
