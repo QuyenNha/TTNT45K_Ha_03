@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WO4N/hWpDNFzge38j6Dsb3vtEhs25mpVtyswe9iBYAJLksYqrRaq1iE53KRjkoebI4G/Y8Y4CqCVzCZGoYGGWA==",
+  "dgSpecHash": "mebWwbbn9MmTkFRrcVnsvnm7UYWCxuuewXJ0RbiiUytO9/mOEcJsedysEllwS+DZryg0kfnC3uQlii+zrcvSiw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\trand\\Desktop\\TTNT45K_Ha_03\\QuanLyHoSoSinhVien\\QuanLyHoSoSinhVien\\QuanLyHoSoSinhVien.csproj",
+  "projectFilePath": "C:\\Users\\trand\\Documents\\GitHub\\TTNT45K_Ha_03\\QuanLyHoSoSinhVien\\QuanLyHoSoSinhVien\\QuanLyHoSoSinhVien.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\trand\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\trand\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

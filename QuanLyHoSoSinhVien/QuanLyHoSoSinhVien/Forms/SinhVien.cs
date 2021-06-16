@@ -16,7 +16,7 @@ namespace QuanLyHoSoSinhVien.Forms
         {
             InitializeComponent();
         }
-
+        
         private void SinhVien_Load(object sender, EventArgs e)
         {
             LoadTheme();

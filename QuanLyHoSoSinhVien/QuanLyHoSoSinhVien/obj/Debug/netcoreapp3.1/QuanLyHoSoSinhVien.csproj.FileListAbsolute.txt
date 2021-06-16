@@ -71,3 +71,6 @@ C:\Users\trand\Desktop\TTNT45K_Ha_03\QuanLyHoSoSinhVien\QuanLyHoSoSinhVien\obj\D
 C:\Users\trand\Desktop\TTNT45K_Ha_03\QuanLyHoSoSinhVien\QuanLyHoSoSinhVien\obj\Debug\netcoreapp3.1\QuanLyHoSoSinhVien.Forms.MonHoc.resources
 C:\Users\trand\Desktop\TTNT45K_Ha_03\QuanLyHoSoSinhVien\QuanLyHoSoSinhVien\obj\Debug\netcoreapp3.1\QuanLyHoSoSinhVien.csproj.AssemblyReference.cache
 C:\Users\trand\Desktop\TTNT45K_Ha_03\QuanLyHoSoSinhVien\QuanLyHoSoSinhVien\obj\Debug\netcoreapp3.1\QuanLyHoSoSinhVien.Forms.Lop.resources
+C:\Users\trand\Documents\GitHub\TTNT45K_Ha_03\QuanLyHoSoSinhVien\QuanLyHoSoSinhVien\obj\Debug\netcoreapp3.1\QuanLyHoSoSinhVien.Forms.Khoa.resources
+C:\Users\trand\Documents\GitHub\TTNT45K_Ha_03\QuanLyHoSoSinhVien\QuanLyHoSoSinhVien\obj\Debug\netcoreapp3.1\QuanLyHoSoSinhVien.Forms.Lop.resources
+C:\Users\trand\Documents\GitHub\TTNT45K_Ha_03\QuanLyHoSoSinhVien\QuanLyHoSoSinhVien\obj\Debug\netcoreapp3.1\QuanLyHoSoSinhVien.Forms.MonHoc.resources
