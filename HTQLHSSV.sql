@@ -69,7 +69,7 @@ Create Table SINHVIEN (MaSV char(12) not null primary key,
 HoTen nvarchar(50) not null,
 NgaySinh Date not null,
 GioiTinh nvarchar(10) not null,
-DiaChi nvarchar(120),
+DiaChi nvarchar(120) not null,
 DienThoai char(10) not null,
 MaLop char(7) not null,
 DiemTB float
