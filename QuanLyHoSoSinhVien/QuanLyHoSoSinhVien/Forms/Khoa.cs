@@ -232,5 +232,6 @@ namespace QuanLyHoSoSinhVien.Forms
             dt.Load(dr);
             dataGridView1.DataSource = dt;
         }
+        
     }
 }

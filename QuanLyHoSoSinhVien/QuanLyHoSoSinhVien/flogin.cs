@@ -18,40 +18,6 @@ namespace QuanLyHoSoSinhVien
             InitializeComponent();
         }
 
-        private void FormMain_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void quảnLýSinhViênToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void quảnLýNgườiDùngToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
         private void buttonlogin_Click(object sender, EventArgs e)
         {
             if (this.textBoxusername.TextLength == 0 || this.textpass.TextLength == 0)

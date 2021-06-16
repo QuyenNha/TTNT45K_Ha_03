@@ -104,10 +104,6 @@ namespace QuanLyHoSoSinhVien
             OpenChildForm(new Forms.MonHoc(), sender);
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
         private void Reset()
         {
             DisableButton();
@@ -137,28 +133,9 @@ namespace QuanLyHoSoSinhVien
         }
 
 
-        private void FormMainMenu_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void lblTitle_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnCaiDat_Click(object sender, EventArgs e)
-        {
         }
 
         private void btnCloseChildForm_Click(object sender, EventArgs e)
@@ -167,7 +144,6 @@ namespace QuanLyHoSoSinhVien
                 activeForm.Close();
             Reset();
         }
-
         private void btnMaximize_Click_1(object sender, EventArgs e)
         {
             if (WindowState == FormWindowState.Normal)

@@ -79,7 +79,6 @@ namespace QuanLyHoSoSinhVien
             this.lblTitle.Size = new System.Drawing.Size(187, 27);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Hệ thống quản lý ";
-            this.lblTitle.Click += new System.EventHandler(this.lblTitle_Click);
             // 
             // panelMenu
             // 
@@ -113,7 +112,6 @@ namespace QuanLyHoSoSinhVien
             this.btnThongKe.Text = "  Thống Kê";
             this.btnThongKe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnThongKe.UseVisualStyleBackColor = true;
-            this.btnThongKe.Click += new System.EventHandler(this.button4_Click);
             // 
             // btnHocPhan
             // 
@@ -346,7 +344,6 @@ namespace QuanLyHoSoSinhVien
             this.Name = "FormMainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMainMenu";
-            this.Load += new System.EventHandler(this.FormMainMenu_Load);
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();
             this.panelMenu.ResumeLayout(false);

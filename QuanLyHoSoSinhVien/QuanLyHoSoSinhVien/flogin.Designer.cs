@@ -108,7 +108,7 @@ namespace QuanLyHoSoSinhVien
             this.label1.Size = new System.Drawing.Size(134, 22);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tên đăng nhập:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+
             // 
             // textBoxusername
             // 
@@ -116,7 +116,6 @@ namespace QuanLyHoSoSinhVien
             this.textBoxusername.Name = "textBoxusername";
             this.textBoxusername.Size = new System.Drawing.Size(226, 29);
             this.textBoxusername.TabIndex = 1;
-            this.textBoxusername.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
             // 
@@ -127,7 +126,6 @@ namespace QuanLyHoSoSinhVien
             this.label2.Size = new System.Drawing.Size(88, 22);
             this.label2.TabIndex = 0;
             this.label2.Text = "Mật khẩu:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // textpass
             // 
@@ -161,7 +159,6 @@ namespace QuanLyHoSoSinhVien
             this.Name = "flogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hệ thống quản lí sinh viên";
-            this.Load += new System.EventHandler(this.FormMain_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
