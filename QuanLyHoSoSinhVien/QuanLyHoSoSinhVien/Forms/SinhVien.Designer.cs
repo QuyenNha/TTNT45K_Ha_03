@@ -49,9 +49,9 @@ namespace QuanLyHoSoSinhVien.Forms
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -231,7 +231,7 @@ namespace QuanLyHoSoSinhVien.Forms
             // 
             this.button11.FlatAppearance.BorderSize = 0;
             this.button11.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button11.Location = new System.Drawing.Point(52, 263);
+            this.button11.Location = new System.Drawing.Point(53, 263);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(82, 45);
             this.button11.TabIndex = 79;
@@ -250,23 +250,6 @@ namespace QuanLyHoSoSinhVien.Forms
             this.button10.Text = "Xóa";
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button10_Click);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(553, 208);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(83, 28);
-            this.label9.TabIndex = 95;
-            this.label9.Text = "ĐiểmTB:";
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(673, 213);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(183, 23);
-            this.textBox8.TabIndex = 96;
             // 
             // comboBox2
             // 
@@ -300,6 +283,23 @@ namespace QuanLyHoSoSinhVien.Forms
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(183, 23);
             this.comboBox2.TabIndex = 97;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label9.Location = new System.Drawing.Point(553, 208);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(83, 28);
+            this.label9.TabIndex = 95;
+            this.label9.Text = "ĐiểmTB:";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(673, 213);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(183, 23);
+            this.textBox8.TabIndex = 96;
             // 
             // SinhVien
             // 
@@ -362,8 +362,8 @@ namespace QuanLyHoSoSinhVien.Forms
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.ComboBox comboBox2;
     }
 }

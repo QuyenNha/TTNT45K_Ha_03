@@ -108,7 +108,6 @@ namespace QuanLyHoSoSinhVien
             this.label1.Size = new System.Drawing.Size(134, 22);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tên đăng nhập:";
-
             // 
             // textBoxusername
             // 

@@ -13,8 +13,12 @@
         "packagesPath": "C:\\Users\\trand\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\trand\\Documents\\GitHub\\TTNT45K_Ha_03\\QuanLyHoSoSinhVien\\QuanLyHoSoSinhVien\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\trand\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

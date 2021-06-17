@@ -71,28 +71,27 @@ NgaySinh Date not null,
 GioiTinh nvarchar(10) not null,
 DiaChi_PhuongXa nvarchar(50) not null,
 DiaChi_QuanHuyen nvarchar(50) not null,
-DiaChi_Tinh nvarchar(50) not null,
+DiaChi_TinhThanhPho nvarchar(50) not null,
 DienThoai char(10) not null,
 MaLop char(7) not null,
-DiemTB float
 Constraint FK_MaLop Foreign Key (MaLop) References LOPSH(MaLop))
-Insert into SINHVIEN(MaSV,HoTen,NgaySinh,GioiTinh,DiaChi_PhuongXa,DiaChi_QuanHuyen,DiaChi_Tinh,DienThoai,MaLop,DiemTB)
+Insert into SINHVIEN(MaSV,HoTen,NgaySinh,GioiTinh,DiaChi_PhuongXa,DiaChi_QuanHuyen,DiaChi_TinhThanhPho,DienThoai,MaLop)
 Values
-('191121601102',N'Nguyễn Văn Thanh',N'2001-01-13',N'Nam',N'Mỹ An',N'Ngũ Hành Sơn',N'Đà Nẵng','0978745767','45K01',9),
-('191121703455',N'Nguyễn Thị Thanh Thảo',N'2001-11-20',N'Nữ',N'Khuê Mỹ',N'Ngũ Hành Sơn',N'Đà Nẵng','0832413797','45K03',9),
-('191121505133',N'Hoàng Trung Hiếu',N'2000-10-23',N'Nam',N'Hòa Hải',N'Ngũ Hành Sơn',N'Đà Nẵng','0345675123','45K05',9),
-('191121407102',N'Trương Thị Thanh Huyền',N'2001-04-05',N'Nữ',N'Hòa Cường Bắc',N'Hải Châu',N'Đà Nẵng','0373467132','45K07',9),
-('191122015124',N'Trần Thị Thanh Nhã',N'2001-11-25',N'Nữ',N'Hương Hồ',N'Hương Trà',N'Huế','0349716160','45K15',9),
-('191121317123',N'Nguyễn Thị Thanh Bình',N'2001-03-03',N'Nữ',N'Phú Hội',N'Thành phố Huế',N'Huế','0345675505','45K17',9),
-('191121521209',N'Trần Thị Kim Liên',N'2001-02-10',N'Nữ',N'Tây Lộc',N'Thành phố Huế',N'Huế','0969296103','45K21',9),
-('191124022252',N'Tôn Thất Nhật Tôn',N'2001-06-07',N'Nam',N'An Cựu',N'Thành phố Huế',N'Huế','0363450172','45K22',9),
-('191121514108',N'Trần Đỗ Hòa',N'2001-07-09',N'Nam',N'Tứ Hạ',N'Hương Trà',N'Huế','0762548324','45K14',9),
-('191121514120',N'Chế Thị Nhã Quyên',N'2001-07-31',N'Nữ',N'Hương Chữ',N'Hương Trà',N'Huế','0344463107','45K14',9),
-('191121601101',N'Nguyễn Văn Hải',N'2001-01-16',N'Nam',N'Cam An',N'Cam Lộ',N'Quảng Trị','0978745767','45K01',7),
-('191121601103',N'Đặng Thị Như Ý',N'2001-06-14',N'Nữ',N'Đại An',N'Đại Lộc',N'Quảng Nam','0978745767','45K01',9.6),
-('191121601106',N'Hoàng Lê Thiên',N'2001-08-23',N'Nam',N'Cẩm Châu',N'Hội An',N'Quảng Nam','0978745767','45K01',8.9),
-('191121601104',N'Lê Quang Bảo',N'2001-09-12',N'Nam',N'Cửa Đại',N'Hội An',N'Quảng Nam','0978745767','45K01',9.1),
-('191121601105',N'Vũ Thị Hoa',N'2001-10-23',N'Nữ',N'Tam Hòa',N'Núi Thành',N'Quảng Nam','0978745767','45K01',7.9)
+('191121601102',N'Nguyễn Văn Thanh',N'2001-01-13',N'Nam',N'Mỹ An',N'Ngũ Hành Sơn',N'Đà Nẵng','0978745767','45K01'),
+('191121703455',N'Nguyễn Thị Thanh Thảo',N'2001-11-20',N'Nữ',N'Khuê Mỹ',N'Ngũ Hành Sơn',N'Đà Nẵng','0832413797','45K03'),
+('191121505133',N'Hoàng Trung Hiếu',N'2000-10-23',N'Nam',N'Hòa Hải',N'Ngũ Hành Sơn',N'Đà Nẵng','0345675123','45K05'),
+('191121407102',N'Trương Thị Thanh Huyền',N'2001-04-05',N'Nữ',N'Hòa Cường Bắc',N'Hải Châu',N'Đà Nẵng','0373467132','45K07'),
+('191122015124',N'Trần Thị Thanh Nhã',N'2001-11-25',N'Nữ',N'Hương Hồ',N'Hương Trà',N'Huế','0349716160','45K15'),
+('191121317123',N'Nguyễn Thị Thanh Bình',N'2001-03-03',N'Nữ',N'Phú Hội',N'Thành phố Huế',N'Huế','0345675505','45K17'),
+('191121521209',N'Trần Thị Kim Liên',N'2001-02-10',N'Nữ',N'Tây Lộc',N'Thành phố Huế',N'Huế','0969296103','45K21'),
+('191124022252',N'Tôn Thất Nhật Tôn',N'2001-06-07',N'Nam',N'An Cựu',N'Thành phố Huế',N'Huế','0363450172','45K22'),
+('191121514108',N'Trần Đỗ Hòa',N'2001-07-09',N'Nam',N'Tứ Hạ',N'Hương Trà',N'Huế','0762548324','45K14'),
+('191121514120',N'Chế Thị Nhã Quyên',N'2001-07-31',N'Nữ',N'Hương Chữ',N'Hương Trà',N'Huế','0344463107','45K14'),
+('191121601101',N'Nguyễn Văn Hải',N'2001-01-16',N'Nam',N'Cam An',N'Cam Lộ',N'Quảng Trị','0978745767','45K01'),
+('191121601103',N'Đặng Thị Như Ý',N'2001-06-14',N'Nữ',N'Đại An',N'Đại Lộc',N'Quảng Nam','0978745767','45K01'),
+('191121601106',N'Hoàng Lê Thiên',N'2001-08-23',N'Nam',N'Cẩm Châu',N'Hội An',N'Quảng Nam','0978745767','45K01'),
+('191121601104',N'Lê Quang Bảo',N'2001-09-12',N'Nam',N'Cửa Đại',N'Hội An',N'Quảng Nam','0978745767','45K01'),
+('191121601105',N'Vũ Thị Hoa',N'2001-10-23',N'Nữ',N'Tam Hòa',N'Núi Thành',N'Quảng Nam','0978745767','45K01')
 Select * from SINHVIEN
 
 --Bảng MONPHAN

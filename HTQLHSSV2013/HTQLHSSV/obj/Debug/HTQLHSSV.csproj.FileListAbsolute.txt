@@ -1,0 +1,15 @@
+c:\users\trand\documents\visual studio 2013\Projects\HTQLHSSV\HTQLHSSV\bin\Debug\HTQLHSSV.exe.config
+c:\users\trand\documents\visual studio 2013\Projects\HTQLHSSV\HTQLHSSV\obj\Debug\HTQLHSSV.csprojResolveAssemblyReference.cache
+c:\users\trand\documents\visual studio 2013\Projects\HTQLHSSV\HTQLHSSV\obj\Debug\HTQLHSSV.Login.resources
+c:\users\trand\documents\visual studio 2013\Projects\HTQLHSSV\HTQLHSSV\obj\Debug\HTQLHSSV.MainMenu.resources
+c:\users\trand\documents\visual studio 2013\Projects\HTQLHSSV\HTQLHSSV\obj\Debug\HTQLHSSV.Properties.Resources.resources
+c:\users\trand\documents\visual studio 2013\Projects\HTQLHSSV\HTQLHSSV\obj\Debug\HTQLHSSV.csproj.GenerateResource.Cache
+c:\users\trand\documents\visual studio 2013\Projects\HTQLHSSV\HTQLHSSV\bin\Debug\HTQLHSSV.exe
+c:\users\trand\documents\visual studio 2013\Projects\HTQLHSSV\HTQLHSSV\bin\Debug\HTQLHSSV.pdb
+c:\users\trand\documents\visual studio 2013\Projects\HTQLHSSV\HTQLHSSV\obj\Debug\HTQLHSSV.exe
+c:\users\trand\documents\visual studio 2013\Projects\HTQLHSSV\HTQLHSSV\obj\Debug\HTQLHSSV.pdb
+c:\users\trand\documents\visual studio 2013\Projects\HTQLHSSV\HTQLHSSV\obj\Debug\HTQLHSSV.Forms.Khoa.resources
+c:\users\trand\documents\visual studio 2013\Projects\HTQLHSSV\HTQLHSSV\obj\Debug\HTQLHSSV.Forms.Lop.resources
+c:\users\trand\documents\visual studio 2013\Projects\HTQLHSSV\HTQLHSSV\obj\Debug\HTQLHSSV.Forms.MonHoc.resources
+c:\users\trand\documents\visual studio 2013\Projects\HTQLHSSV\HTQLHSSV\obj\Debug\HTQLHSSV.Forms.SinhVien.resources
+C:\Users\trand\Documents\Visual Studio 2013\Projects\HTQLHSSV\HTQLHSSV\obj\Debug\HTQLHSSV.Forms.ThongKe.resources
