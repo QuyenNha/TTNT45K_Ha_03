@@ -60,7 +60,7 @@ namespace HTQLHSSV.Forms
         private void button1_Click(object sender, EventArgs e)
         {
             //Bước 1
-            if (this.textBox1.TextLength == 0 || this.textBox2.TextLength == 0 || this.textBox3.TextLength == 0 || this.textBox4.TextLength == 0 | this.textBox5.Text == null
+            if (this.textBox1.TextLength == 0 || this.textBox2.TextLength == 0 || this.textBox3.TextLength == 0 || this.textBox4.TextLength == 0 | this.textBox5.TextLength == 0
                || this.textBox6.TextLength == 0 || this.dateTimePicker1.Value == null || this.comboBox1.Text == null || this.comboBox3.Text == null
                  )
             {
@@ -91,7 +91,7 @@ namespace HTQLHSSV.Forms
                 string sGioiTinh = comboBox1.Text;
                 string sMaLop = comboBox3.Text;
                 string sNgaySinh = dateTimePicker1.Value.ToString("yyy-MM-dd");
-                string sQuery1 = " insert into MONHOC values(@MaSV,@HoTen,@NgaySinh,@GioiTinh,@DiaChi_PhuongXa,@DiaChi_QuanHuyen,@DiaChi_TinhThanhPho,@DienThoai,@MaLop) ";
+                string sQuery1 = " insert into SINHVIEN values(@MaSV,@HoTen,@NgaySinh,@GioiTinh,@DiaChi_PhuongXa,@DiaChi_QuanHuyen,@DiaChi_TinhThanhPho,@DienThoai,@MaLop) ";
                 SqlCommand cmd = new SqlCommand(sQuery1, con);
                 cmd.Parameters.AddWithValue("@MaSV", sMaSV);
                 cmd.Parameters.AddWithValue("@HoTen", sHoTen);
@@ -145,9 +145,7 @@ namespace HTQLHSSV.Forms
             string sGioiTinh = comboBox1.Text;
             string sMaLop = comboBox3.Text;
             string sNgaySinh = dateTimePicker1.Value.ToString("yyy-MM-dd");
-            string sQuery2 = " update sinhvien set Hoten = @HoTen, NgaySinh = @NgaySinh, " +
-                "GioiTinh = @GioiTinh, DiaChi = @DiaChi, DienThoai = @DienThoai, MaLop = @MaLop, DiaChi_PhuongXa =@DiaChi_PhuongXa, DiaChi_QuanHuyen =@DiaChi_QuanHuyen,@DiaChi_TinhThanhPho,@DiaChi_TinhThanhPho " +
-                "where MaSV = @MaSV";
+            string sQuery2 = "Update SINHVIEN Set HoTen = @HoTen, NgaySinh = @NgaySinh, GioiTinh = @GioiTinh, DiaChi_PhuongXa = @DiaChi_PhuongXa, DiaChi_QuanHuyen = @DiaChi_QuanHuyen,DiaChi_TinhThanhPho=@DiaChi_TinhThanhPho,@DienThoai=DienThoai,@MaLop=MaLop Where MaSV = @MaSV";
 
             SqlCommand cmd = new SqlCommand(sQuery2, con);
             cmd.Parameters.AddWithValue("@MaSV", sMaSV);

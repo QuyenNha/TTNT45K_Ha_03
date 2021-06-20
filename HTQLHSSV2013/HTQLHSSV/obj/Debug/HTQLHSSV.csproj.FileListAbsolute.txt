@@ -13,3 +13,25 @@ c:\users\trand\documents\visual studio 2013\Projects\HTQLHSSV\HTQLHSSV\obj\Debug
 c:\users\trand\documents\visual studio 2013\Projects\HTQLHSSV\HTQLHSSV\obj\Debug\HTQLHSSV.Forms.MonHoc.resources
 c:\users\trand\documents\visual studio 2013\Projects\HTQLHSSV\HTQLHSSV\obj\Debug\HTQLHSSV.Forms.SinhVien.resources
 C:\Users\trand\Documents\Visual Studio 2013\Projects\HTQLHSSV\HTQLHSSV\obj\Debug\HTQLHSSV.Forms.ThongKe.resources
+C:\Users\trand\Documents\GitHub\TTNT45K_Ha_03\HTQLHSSV2013\HTQLHSSV\bin\Debug\HTQLHSSV.exe.config
+C:\Users\trand\Documents\GitHub\TTNT45K_Ha_03\HTQLHSSV2013\HTQLHSSV\obj\Debug\HTQLHSSV.exe
+C:\Users\trand\Documents\GitHub\TTNT45K_Ha_03\HTQLHSSV2013\HTQLHSSV\obj\Debug\HTQLHSSV.pdb
+C:\Users\trand\Documents\GitHub\TTNT45K_Ha_03\HTQLHSSV2013\HTQLHSSV\bin\Debug\HTQLHSSV.exe
+C:\Users\trand\Documents\GitHub\TTNT45K_Ha_03\HTQLHSSV2013\HTQLHSSV\bin\Debug\HTQLHSSV.pdb
+C:\Users\trand\Documents\GitHub\TTNT45K_Ha_03\HTQLHSSV2013\HTQLHSSV\obj\Debug\HTQLHSSV.csprojResolveAssemblyReference.cache
+C:\Users\trand\Documents\GitHub\TTNT45K_Ha_03\HTQLHSSV2013\HTQLHSSV\obj\Debug\HTQLHSSV.Forms.Khoa.resources
+C:\Users\trand\Documents\GitHub\TTNT45K_Ha_03\HTQLHSSV2013\HTQLHSSV\obj\Debug\HTQLHSSV.Forms.Lop.resources
+C:\Users\trand\Documents\GitHub\TTNT45K_Ha_03\HTQLHSSV2013\HTQLHSSV\obj\Debug\HTQLHSSV.Forms.MonHoc.resources
+C:\Users\trand\Documents\GitHub\TTNT45K_Ha_03\HTQLHSSV2013\HTQLHSSV\obj\Debug\HTQLHSSV.Forms.SinhVien.resources
+C:\Users\trand\Documents\GitHub\TTNT45K_Ha_03\HTQLHSSV2013\HTQLHSSV\obj\Debug\HTQLHSSV.Forms.ThongKe.resources
+C:\Users\trand\Documents\GitHub\TTNT45K_Ha_03\HTQLHSSV2013\HTQLHSSV\obj\Debug\HTQLHSSV.Login.resources
+C:\Users\trand\Documents\GitHub\TTNT45K_Ha_03\HTQLHSSV2013\HTQLHSSV\obj\Debug\HTQLHSSV.MainMenu.resources
+C:\Users\trand\Documents\GitHub\TTNT45K_Ha_03\HTQLHSSV2013\HTQLHSSV\obj\Debug\HTQLHSSV.Properties.Resources.resources
+C:\Users\trand\Documents\GitHub\TTNT45K_Ha_03\HTQLHSSV2013\HTQLHSSV\obj\Debug\HTQLHSSV.csproj.GenerateResource.Cache
+C:\Users\trand\Documents\GitHub\TTNT45K_Ha_03\HTQLHSSV2013\HTQLHSSV\obj\Debug\RdlCompile.cache
+C:\Users\trand\Documents\GitHub\TTNT45K_Ha_03\HTQLHSSV2013\HTQLHSSV\obj\Debug\RdlCompile.compiled
+C:\Users\trand\Documents\GitHub\TTNT45K_Ha_03\HTQLHSSV2013\HTQLHSSV\bin\Debug\Report1.rdlc
+C:\Users\trand\Documents\GitHub\TTNT45K_Ha_03\HTQLHSSV2013\HTQLHSSV\bin\Debug\Report2.rdlc
+C:\Users\trand\Documents\GitHub\TTNT45K_Ha_03\HTQLHSSV2013\HTQLHSSV\bin\Debug\Report3.rdlc
+C:\Users\trand\Documents\GitHub\TTNT45K_Ha_03\HTQLHSSV2013\HTQLHSSV\bin\Debug\Report4.rdlc
+C:\Users\trand\Documents\GitHub\TTNT45K_Ha_03\HTQLHSSV2013\HTQLHSSV\bin\Debug\Report5.rdlc

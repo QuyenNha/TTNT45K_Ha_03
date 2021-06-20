@@ -126,7 +126,12 @@ namespace HTQLHSSV
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            if (MessageBox.Show("Bạn chắc chắn muốn thoát khỏi hệ thống?", "Exit",
+            MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Close();
+                System.Windows.Forms.Application.Exit();
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

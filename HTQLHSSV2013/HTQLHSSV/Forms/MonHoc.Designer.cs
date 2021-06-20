@@ -51,9 +51,10 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(569, 284);
+            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(537, 267);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(183, 20);
+            this.textBox3.Size = new System.Drawing.Size(215, 34);
             this.textBox3.TabIndex = 130;
             // 
             // dataGridView1
@@ -120,6 +121,7 @@
             // 
             // comboBox2
             // 
+            this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             "Du lịch",
@@ -134,34 +136,37 @@
             "Tài chính",
             "Thống kê - Tin học",
             "Thương mại điện tử"});
-            this.comboBox2.Location = new System.Drawing.Point(222, 212);
+            this.comboBox2.Location = new System.Drawing.Point(190, 211);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(183, 21);
+            this.comboBox2.Size = new System.Drawing.Size(215, 36);
             this.comboBox2.TabIndex = 120;
             // 
             // comboBox1
             // 
+            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "2",
             "3"});
-            this.comboBox1.Location = new System.Drawing.Point(222, 162);
+            this.comboBox1.Location = new System.Drawing.Point(190, 154);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(183, 21);
+            this.comboBox1.Size = new System.Drawing.Size(215, 36);
             this.comboBox1.TabIndex = 119;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(222, 105);
+            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(190, 97);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(183, 20);
+            this.textBox2.Size = new System.Drawing.Size(215, 34);
             this.textBox2.TabIndex = 117;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(222, 48);
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(190, 43);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(183, 20);
+            this.textBox1.Size = new System.Drawing.Size(215, 34);
             this.textBox1.TabIndex = 116;
             // 
             // button1
@@ -180,7 +185,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.label4.Location = new System.Drawing.Point(55, 212);
+            this.label4.Location = new System.Drawing.Point(55, 215);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(95, 28);
             this.label4.TabIndex = 111;
@@ -200,7 +205,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.label2.Location = new System.Drawing.Point(55, 97);
+            this.label2.Location = new System.Drawing.Point(55, 99);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(97, 28);
             this.label2.TabIndex = 109;
@@ -210,7 +215,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.label1.Location = new System.Drawing.Point(55, 43);
+            this.label1.Location = new System.Drawing.Point(55, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(130, 28);
             this.label1.TabIndex = 108;

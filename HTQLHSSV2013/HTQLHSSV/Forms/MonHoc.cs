@@ -210,7 +210,7 @@ namespace HTQLHSSV.Forms
             textBox1.Text = "";
             textBox2.Text = "";
             comboBox1.Text = "";
-            comboBox1.Text = "";
+            comboBox2.Text = "";
             textBox1.Enabled = true;
             //Bước 1
             SqlConnection con = new SqlConnection(sCon);

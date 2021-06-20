@@ -51,6 +51,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
             this.panel1.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panelTitleBar.SuspendLayout();
@@ -80,7 +81,7 @@
             this.btnThongKe.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnThongKe.FlatAppearance.BorderSize = 0;
             this.btnThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThongKe.Font = new System.Drawing.Font("UTM Avo", 9.75F);
+            this.btnThongKe.Font = new System.Drawing.Font("UTM Avo", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThongKe.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnThongKe.Image = global::HTQLHSSV.Properties.Resources.icons8_graph_report_script_32;
             this.btnThongKe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -99,7 +100,7 @@
             this.btnHocPhan.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnHocPhan.FlatAppearance.BorderSize = 0;
             this.btnHocPhan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHocPhan.Font = new System.Drawing.Font("UTM Avo", 9.75F);
+            this.btnHocPhan.Font = new System.Drawing.Font("UTM Avo", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHocPhan.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnHocPhan.Image = global::HTQLHSSV.Properties.Resources.icons8_course_32;
             this.btnHocPhan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -118,7 +119,7 @@
             this.btnKhoa.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnKhoa.FlatAppearance.BorderSize = 0;
             this.btnKhoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnKhoa.Font = new System.Drawing.Font("UTM Avo", 9.75F);
+            this.btnKhoa.Font = new System.Drawing.Font("UTM Avo", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKhoa.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnKhoa.Image = global::HTQLHSSV.Properties.Resources.icons8_book_32;
             this.btnKhoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -137,7 +138,7 @@
             this.btnLop.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnLop.FlatAppearance.BorderSize = 0;
             this.btnLop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLop.Font = new System.Drawing.Font("UTM Avo", 9.75F);
+            this.btnLop.Font = new System.Drawing.Font("UTM Avo", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLop.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnLop.Image = global::HTQLHSSV.Properties.Resources.icons8_class_32;
             this.btnLop.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -156,7 +157,7 @@
             this.btnSinhVien.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSinhVien.FlatAppearance.BorderSize = 0;
             this.btnSinhVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSinhVien.Font = new System.Drawing.Font("UTM Avo", 9.75F);
+            this.btnSinhVien.Font = new System.Drawing.Font("UTM Avo", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSinhVien.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnSinhVien.Image = global::HTQLHSSV.Properties.Resources.icons8_student_male_321;
             this.btnSinhVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -390,5 +391,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.DirectoryServices.DirectoryEntry directoryEntry1;
     }
 }

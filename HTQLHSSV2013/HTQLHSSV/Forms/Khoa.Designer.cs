@@ -43,14 +43,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kHOABindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(569, 284);
+            this.textBox4.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(537, 267);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(183, 20);
+            this.textBox4.Size = new System.Drawing.Size(215, 34);
             this.textBox4.TabIndex = 130;
             // 
             // dataGridView1
@@ -66,7 +68,6 @@
             // kHOABindingSource
             // 
             this.kHOABindingSource.DataMember = "KHOA";
-            // 
             // 
             // button5
             // 
@@ -118,16 +119,18 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(222, 105);
+            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(182, 96);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(183, 20);
+            this.textBox2.Size = new System.Drawing.Size(215, 34);
             this.textBox2.TabIndex = 117;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(222, 48);
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(182, 43);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(183, 20);
+            this.textBox1.Size = new System.Drawing.Size(215, 34);
             this.textBox1.TabIndex = 116;
             // 
             // button1
@@ -174,9 +177,10 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(222, 157);
+            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(182, 153);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(183, 20);
+            this.textBox3.Size = new System.Drawing.Size(215, 34);
             this.textBox3.TabIndex = 131;
             // 
             // Khoa
