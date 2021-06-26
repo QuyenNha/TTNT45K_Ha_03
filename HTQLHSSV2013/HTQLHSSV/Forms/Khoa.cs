@@ -39,7 +39,13 @@ namespace HTQLHSSV.Forms
             adapter.Fill(ds, "KHOA");
 
             dataGridView1.DataSource = ds.Tables["KHOA"];
-
+            dataGridView1.Columns[0].HeaderText = "Tên khoa";
+            dataGridView1.Columns[1].HeaderText = "Địa chỉ";
+            dataGridView1.Columns[2].HeaderText = "Số điện thoại";
+            
+            dataGridView1.Columns[0].Width = 100;
+            dataGridView1.Columns[1].Width = 200;
+            dataGridView1.Columns[2].Width = 120;
             con.Close();
         }
         private void LoadTheme()

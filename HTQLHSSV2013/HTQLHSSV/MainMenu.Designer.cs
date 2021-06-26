@@ -73,7 +73,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 761);
+            this.panel1.Size = new System.Drawing.Size(200, 785);
             this.panel1.TabIndex = 0;
             // 
             // btnThongKe
@@ -204,7 +204,7 @@
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleBar.Location = new System.Drawing.Point(200, 0);
             this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(888, 100);
+            this.panelTitleBar.Size = new System.Drawing.Size(950, 100);
             this.panelTitleBar.TabIndex = 1;
             // 
             // btnCloseChildForm
@@ -226,7 +226,7 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Image = global::HTQLHSSV.Properties.Resources.icons8_minimize_window_32;
-            this.button2.Location = new System.Drawing.Point(783, 3);
+            this.button2.Location = new System.Drawing.Point(845, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(30, 30);
             this.button2.TabIndex = 3;
@@ -239,7 +239,7 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = global::HTQLHSSV.Properties.Resources.icons8_maximize_window_32;
-            this.button1.Location = new System.Drawing.Point(819, 3);
+            this.button1.Location = new System.Drawing.Point(881, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(30, 30);
             this.button1.TabIndex = 2;
@@ -252,7 +252,7 @@
             this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Image = global::HTQLHSSV.Properties.Resources.icons8_close_window_32;
-            this.btnClose.Location = new System.Drawing.Point(855, 3);
+            this.btnClose.Location = new System.Drawing.Point(917, 3);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(30, 30);
             this.btnClose.TabIndex = 1;
@@ -282,7 +282,7 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMenu.Location = new System.Drawing.Point(200, 100);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(888, 661);
+            this.panelMenu.Size = new System.Drawing.Size(950, 685);
             this.panelMenu.TabIndex = 3;
             // 
             // panelDesktopPanel
@@ -294,7 +294,7 @@
             this.panelDesktopPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktopPanel.Location = new System.Drawing.Point(0, 0);
             this.panelDesktopPanel.Name = "panelDesktopPanel";
-            this.panelDesktopPanel.Size = new System.Drawing.Size(888, 661);
+            this.panelDesktopPanel.Size = new System.Drawing.Size(950, 685);
             this.panelDesktopPanel.TabIndex = 0;
             // 
             // label2
@@ -322,9 +322,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::HTQLHSSV.Properties.Resources._11;
-            this.pictureBox2.Location = new System.Drawing.Point(-11, 180);
+            this.pictureBox2.Location = new System.Drawing.Point(0, 176);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(911, 481);
+            this.pictureBox2.Size = new System.Drawing.Size(950, 509);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
@@ -343,7 +343,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1088, 761);
+            this.ClientSize = new System.Drawing.Size(1150, 785);
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panel1);

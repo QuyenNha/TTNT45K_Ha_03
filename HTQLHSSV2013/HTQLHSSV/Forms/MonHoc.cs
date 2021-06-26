@@ -21,7 +21,6 @@ namespace HTQLHSSV.Forms
 
         private void MonHoc_Load(object sender, EventArgs e)
         {
-
             LoadTheme();
             SqlConnection con = new SqlConnection(sCon);
             try
@@ -42,6 +41,10 @@ namespace HTQLHSSV.Forms
             adapter.Fill(ds, "MONHOC");
 
             dataGridView1.DataSource = ds.Tables["MONHOC"];
+            dataGridView1.Columns[0].HeaderText = "Mã môm học";
+            dataGridView1.Columns[1].HeaderText = "Môn học";
+            dataGridView1.Columns[2].HeaderText = "Số tín chỉ";
+            dataGridView1.Columns[3].HeaderText = "Tên khoa";
 
             con.Close();
         }

@@ -50,12 +50,22 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.sINHVIENBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.qLHSSVDataSet1 = new HTQLHSSV.QLHSSVDataSet1();
+            this.sINHVIENBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.qLHSSVDataSet = new HTQLHSSV.QLHSSVDataSet();
             this.sINHVIENBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.sINHVIENBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.sINHVIENBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.sINHVIENTableAdapter = new HTQLHSSV.QLHSSVDataSetTableAdapters.SINHVIENTableAdapter();
+            this.sINHVIENTableAdapter1 = new HTQLHSSV.QLHSSVDataSet1TableAdapters.SINHVIENTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sINHVIENBindingSource4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLHSSVDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sINHVIENBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLHSSVDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sINHVIENBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sINHVIENBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sINHVIENBindingSource)).BeginInit();
@@ -105,7 +115,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(553, 109);
+            this.label6.Location = new System.Drawing.Point(606, 109);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(78, 28);
             this.label6.TabIndex = 90;
@@ -115,7 +125,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(553, 165);
+            this.label7.Location = new System.Drawing.Point(606, 165);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(75, 28);
             this.label7.TabIndex = 91;
@@ -125,7 +135,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(553, 52);
+            this.label5.Location = new System.Drawing.Point(606, 52);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(51, 28);
             this.label5.TabIndex = 89;
@@ -162,7 +172,7 @@
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(641, 49);
+            this.textBox3.Location = new System.Drawing.Point(694, 49);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(215, 34);
             this.textBox3.TabIndex = 95;
@@ -173,7 +183,8 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Nam",
-            "Nữ"});
+            "Nữ",
+            "Khác"});
             this.comboBox1.Location = new System.Drawing.Point(191, 210);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(215, 36);
@@ -209,7 +220,7 @@
             "45K26  ",
             "45K27  ",
             "45K28  "});
-            this.comboBox3.Location = new System.Drawing.Point(641, 106);
+            this.comboBox3.Location = new System.Drawing.Point(694, 106);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(215, 36);
             this.comboBox3.TabIndex = 98;
@@ -254,7 +265,7 @@
             // 
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.button5.Location = new System.Drawing.Point(755, 263);
+            this.button5.Location = new System.Drawing.Point(808, 263);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(101, 45);
             this.button5.TabIndex = 102;
@@ -265,7 +276,7 @@
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(641, 162);
+            this.textBox4.Location = new System.Drawing.Point(694, 162);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(215, 34);
             this.textBox4.TabIndex = 103;
@@ -273,7 +284,7 @@
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(641, 212);
+            this.textBox5.Location = new System.Drawing.Point(694, 212);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(105, 34);
             this.textBox5.TabIndex = 104;
@@ -281,7 +292,7 @@
             // textBox6
             // 
             this.textBox6.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(752, 212);
+            this.textBox6.Location = new System.Drawing.Point(805, 212);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(104, 34);
             this.textBox6.TabIndex = 105;
@@ -289,12 +300,32 @@
             // dataGridView1
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridView1.Location = new System.Drawing.Point(52, 314);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(804, 323);
+            this.dataGridView1.Size = new System.Drawing.Size(857, 323);
             this.dataGridView1.TabIndex = 106;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            // 
+            // sINHVIENBindingSource4
+            // 
+            this.sINHVIENBindingSource4.DataMember = "SINHVIEN";
+            this.sINHVIENBindingSource4.DataSource = this.qLHSSVDataSet1;
+            // 
+            // qLHSSVDataSet1
+            // 
+            this.qLHSSVDataSet1.DataSetName = "QLHSSVDataSet1";
+            this.qLHSSVDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // sINHVIENBindingSource3
+            // 
+            this.sINHVIENBindingSource3.DataMember = "SINHVIEN";
+            this.sINHVIENBindingSource3.DataSource = this.qLHSSVDataSet;
+            // 
+            // qLHSSVDataSet
+            // 
+            this.qLHSSVDataSet.DataSetName = "QLHSSVDataSet";
+            this.qLHSSVDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // sINHVIENBindingSource1
             // 
@@ -307,7 +338,7 @@
             // textBox7
             // 
             this.textBox7.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(535, 268);
+            this.textBox7.Location = new System.Drawing.Point(588, 268);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(215, 34);
             this.textBox7.TabIndex = 107;
@@ -321,11 +352,19 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(215, 34);
             this.dateTimePicker1.TabIndex = 108;
             // 
+            // sINHVIENTableAdapter
+            // 
+            this.sINHVIENTableAdapter.ClearBeforeFill = true;
+            // 
+            // sINHVIENTableAdapter1
+            // 
+            this.sINHVIENTableAdapter1.ClearBeforeFill = true;
+            // 
             // SinhVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(914, 679);
+            this.ClientSize = new System.Drawing.Size(964, 679);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.dataGridView1);
@@ -353,6 +392,10 @@
             this.Text = "SinhVien";
             this.Load += new System.EventHandler(this.SinhVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sINHVIENBindingSource4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLHSSVDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sINHVIENBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLHSSVDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sINHVIENBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sINHVIENBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sINHVIENBindingSource)).EndInit();
@@ -408,5 +451,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn diaChiTinhThanhPhoDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource sINHVIENBindingSource2;
+        private QLHSSVDataSet qLHSSVDataSet;
+        private System.Windows.Forms.BindingSource sINHVIENBindingSource3;
+        private QLHSSVDataSetTableAdapters.SINHVIENTableAdapter sINHVIENTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private QLHSSVDataSet1 qLHSSVDataSet1;
+        private System.Windows.Forms.BindingSource sINHVIENBindingSource4;
+        private QLHSSVDataSet1TableAdapters.SINHVIENTableAdapter sINHVIENTableAdapter1;
     }
 }

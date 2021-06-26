@@ -19,7 +19,7 @@ namespace HTQLHSSV.Forms
 
         private void SinhVien_Load(object sender, EventArgs e)
         {
-
+           
             LoadTheme();
             SqlConnection con = new SqlConnection(sCon);
             try
@@ -31,15 +31,34 @@ namespace HTQLHSSV.Forms
                 MessageBox.Show("Xảy ra lỗi trong quá trình kết nối DB!1");
             }
 
-            //Bước 2 - lấy dữ liệu về
+            //Bước 2 - lấy dữ liệu 
             string sQuery = "Select * from SINHVIEN";
             SqlDataAdapter adapter = new SqlDataAdapter(sQuery, con);
 
             DataSet ds = new DataSet();
 
             adapter.Fill(ds, "SinhVien");
-
+            //B3 - Sửa tên cột
             dataGridView1.DataSource = ds.Tables["SinhVien"];
+            dataGridView1.Columns[0].HeaderText = "Mã sinh viên";
+            dataGridView1.Columns[1].HeaderText = "Họ tên";
+            dataGridView1.Columns[2].HeaderText = "Ngày sinh";
+            dataGridView1.Columns[3].HeaderText = "Giới tính";
+            dataGridView1.Columns[4].HeaderText = "Phường/Xã";
+            dataGridView1.Columns[5].HeaderText = "Quận/Huyện";
+            dataGridView1.Columns[6].HeaderText = "Tỉnh/Thành phố";
+            dataGridView1.Columns[7].HeaderText = "Số điện thoại";
+            dataGridView1.Columns[8].HeaderText = "Mã lớp";
+            //B4 - Chỉnh size cột
+            dataGridView1.Columns[0].Width = 80;
+            dataGridView1.Columns[1].Width = 120;
+            dataGridView1.Columns[2].Width = 65;
+            dataGridView1.Columns[3].Width = 50;
+            dataGridView1.Columns[4].Width = 90;
+            dataGridView1.Columns[5].Width = 90;
+            dataGridView1.Columns[6].Width = 90;
+            dataGridView1.Columns[7].Width = 75;
+            dataGridView1.Columns[8].Width = 50;
 
             con.Close();
         }

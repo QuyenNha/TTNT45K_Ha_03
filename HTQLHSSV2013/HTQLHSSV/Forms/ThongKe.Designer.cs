@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtTKe = new System.Windows.Forms.ComboBox();
+            this.txtML = new System.Windows.Forms.ComboBox();
             this.btnTTP = new System.Windows.Forms.Button();
             this.btnQH = new System.Windows.Forms.Button();
             this.btnPX = new System.Windows.Forms.Button();
@@ -37,8 +39,6 @@
             this.txtTTP = new System.Windows.Forms.TextBox();
             this.txtQH = new System.Windows.Forms.TextBox();
             this.txtPX = new System.Windows.Forms.TextBox();
-            this.txtTKe = new System.Windows.Forms.TextBox();
-            this.txtML = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -52,6 +52,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.txtTKe);
+            this.panel1.Controls.Add(this.txtML);
             this.panel1.Controls.Add(this.btnTTP);
             this.panel1.Controls.Add(this.btnQH);
             this.panel1.Controls.Add(this.btnPX);
@@ -60,8 +62,6 @@
             this.panel1.Controls.Add(this.txtTTP);
             this.panel1.Controls.Add(this.txtQH);
             this.panel1.Controls.Add(this.txtPX);
-            this.panel1.Controls.Add(this.txtTKe);
-            this.panel1.Controls.Add(this.txtML);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
@@ -71,12 +71,68 @@
             this.panel1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1032, 188);
+            this.panel1.Size = new System.Drawing.Size(964, 188);
             this.panel1.TabIndex = 1;
+            // 
+            // txtTKe
+            // 
+            this.txtTKe.FormattingEnabled = true;
+            this.txtTKe.Items.AddRange(new object[] {
+            "Kinh doanh quốc tế",
+            "Quản trị kinh doanh",
+            "Du lịch",
+            "Kinh tế",
+            "Thống kê - Tin học",
+            "Kế toán",
+            "Ngân hàng",
+            "Thương mại điện tử",
+            "Lý luận chính trị",
+            "Marketing",
+            "Luật",
+            "Tài chính"});
+            this.txtTKe.Location = new System.Drawing.Point(124, 84);
+            this.txtTKe.Name = "txtTKe";
+            this.txtTKe.Size = new System.Drawing.Size(190, 36);
+            this.txtTKe.TabIndex = 12;
+            // 
+            // txtML
+            // 
+            this.txtML.FormattingEnabled = true;
+            this.txtML.Items.AddRange(new object[] {
+            "45K01  ",
+            "45K02  ",
+            "45K03  ",
+            "45K04  ",
+            "45K05  ",
+            "45K06  ",
+            "45K07  ",
+            "45K08  ",
+            "45K09  ",
+            "45K12  ",
+            "45K13  ",
+            "45K14  ",
+            "45K15  ",
+            "45K16  ",
+            "45K17  ",
+            "45K18  ",
+            "45K19  ",
+            "45K20  ",
+            "45K21  ",
+            "45K22  ",
+            "45K23  ",
+            "45K25  ",
+            "45K26  ",
+            "45K27  ",
+            "45K28  ",
+            "45K29  "});
+            this.txtML.Location = new System.Drawing.Point(124, 29);
+            this.txtML.Name = "txtML";
+            this.txtML.Size = new System.Drawing.Size(190, 36);
+            this.txtML.TabIndex = 11;
             // 
             // btnTTP
             // 
-            this.btnTTP.Location = new System.Drawing.Point(884, 133);
+            this.btnTTP.Location = new System.Drawing.Point(816, 133);
             this.btnTTP.Name = "btnTTP";
             this.btnTTP.Size = new System.Drawing.Size(105, 40);
             this.btnTTP.TabIndex = 10;
@@ -86,7 +142,7 @@
             // 
             // btnQH
             // 
-            this.btnQH.Location = new System.Drawing.Point(884, 77);
+            this.btnQH.Location = new System.Drawing.Point(816, 77);
             this.btnQH.Name = "btnQH";
             this.btnQH.Size = new System.Drawing.Size(105, 40);
             this.btnQH.TabIndex = 8;
@@ -96,7 +152,7 @@
             // 
             // btnPX
             // 
-            this.btnPX.Location = new System.Drawing.Point(884, 25);
+            this.btnPX.Location = new System.Drawing.Point(816, 25);
             this.btnPX.Name = "btnPX";
             this.btnPX.Size = new System.Drawing.Size(105, 40);
             this.btnPX.TabIndex = 6;
@@ -106,7 +162,7 @@
             // 
             // btnTKK
             // 
-            this.btnTKK.Location = new System.Drawing.Point(348, 82);
+            this.btnTKK.Location = new System.Drawing.Point(320, 82);
             this.btnTKK.Name = "btnTKK";
             this.btnTKK.Size = new System.Drawing.Size(105, 40);
             this.btnTKK.TabIndex = 4;
@@ -116,7 +172,7 @@
             // 
             // btnTKL
             // 
-            this.btnTKL.Location = new System.Drawing.Point(348, 27);
+            this.btnTKL.Location = new System.Drawing.Point(320, 27);
             this.btnTKL.Name = "btnTKL";
             this.btnTKL.Size = new System.Drawing.Size(105, 40);
             this.btnTKL.TabIndex = 2;
@@ -126,44 +182,30 @@
             // 
             // txtTTP
             // 
-            this.txtTTP.Location = new System.Drawing.Point(662, 133);
+            this.txtTTP.Location = new System.Drawing.Point(620, 133);
             this.txtTTP.Name = "txtTTP";
-            this.txtTTP.Size = new System.Drawing.Size(215, 34);
+            this.txtTTP.Size = new System.Drawing.Size(190, 34);
             this.txtTTP.TabIndex = 9;
             // 
             // txtQH
             // 
-            this.txtQH.Location = new System.Drawing.Point(662, 79);
+            this.txtQH.Location = new System.Drawing.Point(620, 84);
             this.txtQH.Name = "txtQH";
-            this.txtQH.Size = new System.Drawing.Size(215, 34);
+            this.txtQH.Size = new System.Drawing.Size(190, 34);
             this.txtQH.TabIndex = 7;
             // 
             // txtPX
             // 
-            this.txtPX.Location = new System.Drawing.Point(662, 26);
+            this.txtPX.Location = new System.Drawing.Point(620, 29);
             this.txtPX.Name = "txtPX";
-            this.txtPX.Size = new System.Drawing.Size(215, 34);
+            this.txtPX.Size = new System.Drawing.Size(190, 34);
             this.txtPX.TabIndex = 5;
-            // 
-            // txtTKe
-            // 
-            this.txtTKe.Location = new System.Drawing.Point(127, 84);
-            this.txtTKe.Name = "txtTKe";
-            this.txtTKe.Size = new System.Drawing.Size(215, 34);
-            this.txtTKe.TabIndex = 3;
-            // 
-            // txtML
-            // 
-            this.txtML.Location = new System.Drawing.Point(127, 30);
-            this.txtML.Name = "txtML";
-            this.txtML.Size = new System.Drawing.Size(215, 34);
-            this.txtML.TabIndex = 1;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(513, 136);
+            this.label5.Location = new System.Drawing.Point(472, 136);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(148, 28);
             this.label5.TabIndex = 0;
@@ -173,7 +215,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(513, 81);
+            this.label4.Location = new System.Drawing.Point(472, 81);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(127, 28);
             this.label4.TabIndex = 0;
@@ -183,7 +225,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(513, 29);
+            this.label3.Location = new System.Drawing.Point(472, 29);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(115, 28);
             this.label3.TabIndex = 0;
@@ -193,7 +235,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(33, 87);
+            this.label2.Location = new System.Drawing.Point(30, 87);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(93, 28);
             this.label2.TabIndex = 0;
@@ -203,7 +245,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(33, 32);
+            this.label1.Location = new System.Drawing.Point(30, 32);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 28);
             this.label1.TabIndex = 0;
@@ -215,7 +257,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 188);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1032, 491);
+            this.panel2.Size = new System.Drawing.Size(964, 491);
             this.panel2.TabIndex = 2;
             // 
             // reportViewer1
@@ -224,14 +266,14 @@
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "HTQLHSSV.Report1.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(1032, 491);
+            this.reportViewer1.Size = new System.Drawing.Size(964, 491);
             this.reportViewer1.TabIndex = 0;
             // 
             // ThongKe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1032, 679);
+            this.ClientSize = new System.Drawing.Size(964, 679);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "ThongKe";
@@ -255,8 +297,6 @@
         private System.Windows.Forms.TextBox txtTTP;
         private System.Windows.Forms.TextBox txtQH;
         private System.Windows.Forms.TextBox txtPX;
-        private System.Windows.Forms.TextBox txtTKe;
-        private System.Windows.Forms.TextBox txtML;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
@@ -264,5 +304,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private System.Windows.Forms.ComboBox txtTKe;
+        private System.Windows.Forms.ComboBox txtML;
     }
 }

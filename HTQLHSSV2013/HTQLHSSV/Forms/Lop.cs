@@ -39,6 +39,9 @@ namespace HTQLHSSV.Forms
             adapter.Fill(ds, "LopSH");
 
             dataGridView1.DataSource = ds.Tables["LopSH"];
+            dataGridView1.Columns[0].HeaderText = "Mã lớp";
+            dataGridView1.Columns[1].HeaderText = "Tên lớp";
+            dataGridView1.Columns[2].HeaderText = "Tên khoa";
 
             con.Close();
         }

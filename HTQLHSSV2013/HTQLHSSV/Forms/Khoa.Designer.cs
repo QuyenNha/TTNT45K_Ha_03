@@ -50,7 +50,7 @@
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(537, 267);
+            this.textBox4.Location = new System.Drawing.Point(590, 267);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(215, 34);
             this.textBox4.TabIndex = 130;
@@ -61,7 +61,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(55, 313);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(804, 323);
+            this.dataGridView1.Size = new System.Drawing.Size(857, 323);
             this.dataGridView1.TabIndex = 129;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -73,7 +73,7 @@
             // 
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.button5.Location = new System.Drawing.Point(758, 262);
+            this.button5.Location = new System.Drawing.Point(811, 262);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(101, 45);
             this.button5.TabIndex = 125;
@@ -120,7 +120,7 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(182, 96);
+            this.textBox2.Location = new System.Drawing.Point(418, 99);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(215, 34);
             this.textBox2.TabIndex = 117;
@@ -128,7 +128,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(182, 43);
+            this.textBox1.Location = new System.Drawing.Point(418, 46);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(215, 34);
             this.textBox1.TabIndex = 116;
@@ -149,7 +149,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.label3.Location = new System.Drawing.Point(55, 157);
+            this.label3.Location = new System.Drawing.Point(291, 160);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(109, 28);
             this.label3.TabIndex = 110;
@@ -159,7 +159,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.label2.Location = new System.Drawing.Point(55, 97);
+            this.label2.Location = new System.Drawing.Point(291, 100);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(78, 28);
             this.label2.TabIndex = 109;
@@ -169,7 +169,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.label1.Location = new System.Drawing.Point(55, 43);
+            this.label1.Location = new System.Drawing.Point(291, 46);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(95, 28);
             this.label1.TabIndex = 108;
@@ -178,7 +178,7 @@
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(182, 153);
+            this.textBox3.Location = new System.Drawing.Point(418, 156);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(215, 34);
             this.textBox3.TabIndex = 131;
@@ -187,7 +187,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(914, 679);
+            this.ClientSize = new System.Drawing.Size(964, 679);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.dataGridView1);
