@@ -164,7 +164,7 @@ namespace HTQLHSSV.Forms
             string sGioiTinh = comboBox1.Text;
             string sMaLop = comboBox3.Text;
             string sNgaySinh = dateTimePicker1.Value.ToString("yyy-MM-dd");
-            string sQuery2 = "Update SINHVIEN Set HoTen = @HoTen, NgaySinh = @NgaySinh, GioiTinh = @GioiTinh, DiaChi_PhuongXa = @DiaChi_PhuongXa, DiaChi_QuanHuyen = @DiaChi_QuanHuyen,DiaChi_TinhThanhPho=@DiaChi_TinhThanhPho,@DienThoai=DienThoai,@MaLop=MaLop Where MaSV = @MaSV";
+            string sQuery2 = "Update SINHVIEN Set HoTen = @HoTen, NgaySinh = @NgaySinh, GioiTinh = @GioiTinh, DiaChi_PhuongXa = @DiaChi_PhuongXa, DiaChi_QuanHuyen = @DiaChi_QuanHuyen,DiaChi_TinhThanhPho=@DiaChi_TinhThanhPho, DienThoai=@DienThoai, MaLop=@MaLop Where MaSV = @MaSV";
 
             SqlCommand cmd = new SqlCommand(sQuery2, con);
             cmd.Parameters.AddWithValue("@MaSV", sMaSV);
