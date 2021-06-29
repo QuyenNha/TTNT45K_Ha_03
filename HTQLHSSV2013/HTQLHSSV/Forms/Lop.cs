@@ -72,7 +72,7 @@ namespace HTQLHSSV.Forms
             //Bước 1
             if (this.textBox1.TextLength == 0 || this.textBox2.TextLength == 0 || this.comboBox1.Text == null)
             {
-                MessageBox.Show("Bạn vui lòng điền đầy đủ thông tin!", "THÔNG BÁO", MessageBoxButtons.OK);
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin!", "THÔNG BÁO", MessageBoxButtons.OK);
             }
 
             else
@@ -101,11 +101,11 @@ namespace HTQLHSSV.Forms
                 try
                 {
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Thêm mới thành công!");
+                    MessageBox.Show("Thêm mới thành công!", "THÔNG BÁO", MessageBoxButtons.OK);
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Mã Lớp Đã Tồn Tại!");
+                    MessageBox.Show("Lỗi nhập dữ liệu: " + ex.Message, "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 string sQuery = "Select * from LopSH";
                 SqlDataAdapter adapter = new SqlDataAdapter(sQuery, con);
@@ -143,11 +143,11 @@ namespace HTQLHSSV.Forms
             try
             {
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Sửa thành công!");
+                MessageBox.Show("Sửa thành công!", "THÔNG BÁO", MessageBoxButtons.OK);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Tên Khoa không tồn tại!");
+                MessageBox.Show("Lỗi nhập dữ liệu: " + ex.Message, "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             string sQuery = "Select * from LopSH";
             SqlDataAdapter adapter = new SqlDataAdapter(sQuery, con);
@@ -178,11 +178,11 @@ namespace HTQLHSSV.Forms
             try
             {
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Xóa thành công!");
+                MessageBox.Show("Xóa thành công!", "THÔNG BÁO", MessageBoxButtons.OK);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Bạn không thể xoá được vì lớp có chứa sinh viên!");
+                MessageBox.Show("Bạn không thể xoá được vì lớp có chứa sinh viên!", "THÔNG BÁO", MessageBoxButtons.OK);
             }
             string sQuery = "Select * from LopSH";
             SqlDataAdapter adapter = new SqlDataAdapter(sQuery, con);

@@ -83,7 +83,7 @@ namespace HTQLHSSV.Forms
                || this.textBox6.TextLength == 0 || this.dateTimePicker1.Value == null || this.comboBox1.Text == null || this.comboBox3.Text == null
                  )
             {
-                MessageBox.Show("Bạn vui lòng điền đầy đủ thông tin!", "THÔNG BÁO", MessageBoxButtons.OK);
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin!", "THÔNG BÁO", MessageBoxButtons.OK);
             }
 
             else
@@ -125,11 +125,11 @@ namespace HTQLHSSV.Forms
                 try
                 {
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Thêm thành công!");
+                    MessageBox.Show("Thêm mới thành công!", "THÔNG BÁO", MessageBoxButtons.OK);
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Mã Sinh Viên Đã Tồn Tại!");
+                    MessageBox.Show("Lỗi nhập dữ liệu: " + ex.Message, "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 string sQuery = "Select * from SINHVIEN";
                 SqlDataAdapter adapter = new SqlDataAdapter(sQuery, con);
@@ -180,11 +180,11 @@ namespace HTQLHSSV.Forms
             try
             {
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Sửa thành công!");
+                MessageBox.Show("Sửa thành công!", "THÔNG BÁO", MessageBoxButtons.OK);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Mã lớp không tồn tại!");
+                MessageBox.Show("Lỗi nhập dữ liệu: " + ex.Message, "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             string sQuery = "Select * from SINHVIEN";
             SqlDataAdapter adapter = new SqlDataAdapter(sQuery, con);
@@ -215,11 +215,11 @@ namespace HTQLHSSV.Forms
             try
             {
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Xóa thành công!");
+                MessageBox.Show("Xóa thành công!", "THÔNG BÁO", MessageBoxButtons.OK);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Xóa thất bại!");
+                MessageBox.Show("Xóa thất bại!", "THÔNG BÁO", MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
             string sQuery = "Select * from SINHVIEN";
             SqlDataAdapter adapter = new SqlDataAdapter(sQuery, con);
