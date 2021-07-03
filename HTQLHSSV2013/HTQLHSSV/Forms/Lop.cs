@@ -105,7 +105,7 @@ namespace HTQLHSSV.Forms
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Lỗi nhập dữ liệu: " + ex.Message, "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Mã lớp đã tồn tại!", "THÔNG BÁO", MessageBoxButtons.OK);
                 }
                 string sQuery = "Select * from LopSH";
                 SqlDataAdapter adapter = new SqlDataAdapter(sQuery, con);

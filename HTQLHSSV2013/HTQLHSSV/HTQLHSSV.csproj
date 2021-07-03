@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database.cs" />
     <Compile Include="DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -126,6 +127,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>QLHSSVDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLHSSVDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLHSSVDataSet2.xsd</DependentUpon>
     </Compile>
     <Compile Include="ThemeColor.cs" />
     <EmbeddedResource Include="Forms\Khoa.resx">
@@ -264,6 +270,17 @@
     </None>
     <None Include="QLHSSVDataSet11.xss">
       <DependentUpon>QLHSSVDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="QLHSSVDataSet2.xsc">
+      <DependentUpon>QLHSSVDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QLHSSVDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLHSSVDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLHSSVDataSet2.xss">
+      <DependentUpon>QLHSSVDataSet2.xsd</DependentUpon>
     </None>
     <None Include="Resources\Untitled.png" />
   </ItemGroup>

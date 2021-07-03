@@ -522,7 +522,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!NgaySinh.Value</Value>
-                              <Style />
+                              <Style>
+                                <Format>MM/dd/yyyy</Format>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />

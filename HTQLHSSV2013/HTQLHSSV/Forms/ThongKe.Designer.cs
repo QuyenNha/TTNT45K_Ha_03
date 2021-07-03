@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtTKe = new System.Windows.Forms.ComboBox();
             this.txtML = new System.Windows.Forms.ComboBox();
@@ -36,7 +37,6 @@
             this.btnPX = new System.Windows.Forms.Button();
             this.btnTKK = new System.Windows.Forms.Button();
             this.btnTKL = new System.Windows.Forms.Button();
-            this.txtTTP = new System.Windows.Forms.TextBox();
             this.txtQH = new System.Windows.Forms.TextBox();
             this.txtPX = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -46,12 +46,19 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.txtTTP = new System.Windows.Forms.ComboBox();
+            this.qLHSSVDataSet2 = new HTQLHSSV.QLHSSVDataSet2();
+            this.sINHVIENBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sINHVIENTableAdapter = new HTQLHSSV.QLHSSVDataSet2TableAdapters.SINHVIENTableAdapter();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.qLHSSVDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sINHVIENBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.txtTTP);
             this.panel1.Controls.Add(this.txtTKe);
             this.panel1.Controls.Add(this.txtML);
             this.panel1.Controls.Add(this.btnTTP);
@@ -59,7 +66,6 @@
             this.panel1.Controls.Add(this.btnPX);
             this.panel1.Controls.Add(this.btnTKK);
             this.panel1.Controls.Add(this.btnTKL);
-            this.panel1.Controls.Add(this.txtTTP);
             this.panel1.Controls.Add(this.txtQH);
             this.panel1.Controls.Add(this.txtPX);
             this.panel1.Controls.Add(this.label5);
@@ -180,13 +186,6 @@
             this.btnTKL.UseVisualStyleBackColor = true;
             this.btnTKL.Click += new System.EventHandler(this.btnTKL_Click);
             // 
-            // txtTTP
-            // 
-            this.txtTTP.Location = new System.Drawing.Point(620, 133);
-            this.txtTTP.Name = "txtTTP";
-            this.txtTTP.Size = new System.Drawing.Size(190, 34);
-            this.txtTTP.TabIndex = 9;
-            // 
             // txtQH
             // 
             this.txtQH.Location = new System.Drawing.Point(620, 84);
@@ -269,6 +268,29 @@
             this.reportViewer1.Size = new System.Drawing.Size(964, 491);
             this.reportViewer1.TabIndex = 0;
             // 
+            // txtTTP
+            // 
+            this.txtTTP.FormattingEnabled = true;
+            this.txtTTP.Location = new System.Drawing.Point(620, 133);
+            this.txtTTP.Name = "txtTTP";
+            this.txtTTP.Size = new System.Drawing.Size(190, 36);
+            this.txtTTP.TabIndex = 13;
+            this.txtTTP.SelectedIndexChanged += new System.EventHandler(this.txtTTP_SelectedIndexChanged);
+            // 
+            // qLHSSVDataSet2
+            // 
+            this.qLHSSVDataSet2.DataSetName = "QLHSSVDataSet2";
+            this.qLHSSVDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // sINHVIENBindingSource
+            // 
+            this.sINHVIENBindingSource.DataMember = "SINHVIEN";
+            this.sINHVIENBindingSource.DataSource = this.qLHSSVDataSet2;
+            // 
+            // sINHVIENTableAdapter
+            // 
+            this.sINHVIENTableAdapter.ClearBeforeFill = true;
+            // 
             // ThongKe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -282,6 +304,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.qLHSSVDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sINHVIENBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -294,7 +318,6 @@
         private System.Windows.Forms.Button btnPX;
         private System.Windows.Forms.Button btnTKK;
         private System.Windows.Forms.Button btnTKL;
-        private System.Windows.Forms.TextBox txtTTP;
         private System.Windows.Forms.TextBox txtQH;
         private System.Windows.Forms.TextBox txtPX;
         private System.Windows.Forms.Label label5;
@@ -306,5 +329,9 @@
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private System.Windows.Forms.ComboBox txtTKe;
         private System.Windows.Forms.ComboBox txtML;
+        private System.Windows.Forms.ComboBox txtTTP;
+        private QLHSSVDataSet2 qLHSSVDataSet2;
+        private System.Windows.Forms.BindingSource sINHVIENBindingSource;
+        private QLHSSVDataSet2TableAdapters.SINHVIENTableAdapter sINHVIENTableAdapter;
     }
 }

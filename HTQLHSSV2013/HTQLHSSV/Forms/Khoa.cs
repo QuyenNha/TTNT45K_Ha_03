@@ -108,7 +108,7 @@ namespace HTQLHSSV.Forms
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Lỗi nhập dữ liệu: " + ex.Message, "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Tên khoa đã tồn tại!", "THÔNG BÁO", MessageBoxButtons.OK);
                 }
                 string sQuery = "Select * from KHOA";
                 SqlDataAdapter adapter = new SqlDataAdapter(sQuery, con);

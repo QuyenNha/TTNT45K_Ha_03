@@ -21,7 +21,15 @@ namespace HTQLHSSV.Forms
 
         private void ThongKe_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'qLHSSVDataSet2.SINHVIEN' table. You can move, or remove it, as needed.
+            this.sINHVIENTableAdapter.Fill(this.qLHSSVDataSet2.SINHVIEN);
             this.reportViewer1.RefreshReport();
+
+            //
+            string sql = "Select distinct DiaChi_TinhThanhPho from SINHVIEN";
+            txtTTP.DataSource = Database.Singleton.LoadData(sql);
+            txtTTP.DisplayMember = "DiaChi_TinhThanhPho";
+
         }
 
         private void btnTKL_Click(object sender, EventArgs e)
@@ -152,6 +160,11 @@ namespace HTQLHSSV.Forms
             reportViewer1.LocalReport.DataSources.Clear();
             reportViewer1.LocalReport.DataSources.Add(rds);
             reportViewer1.RefreshReport();
+        }
+
+        private void txtTTP_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }
