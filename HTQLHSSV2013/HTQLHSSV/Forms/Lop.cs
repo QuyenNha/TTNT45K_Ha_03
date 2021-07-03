@@ -44,6 +44,12 @@ namespace HTQLHSSV.Forms
             dataGridView1.Columns[2].HeaderText = "Tên khoa";
 
             con.Close();
+
+
+            // Thêm dữ liệu vào combobox Khoa
+            string sql = "Select * from KHOA";
+            comboBox1.DataSource = Database.Singleton.LoadData(sql);
+            comboBox1.DisplayMember = "TenKhoa";
         }
         private void LoadTheme()
         {

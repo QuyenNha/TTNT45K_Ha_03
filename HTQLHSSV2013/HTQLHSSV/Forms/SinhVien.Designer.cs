@@ -194,32 +194,6 @@
             // 
             this.comboBox3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "45K01  ",
-            "45K02  ",
-            "45K03  ",
-            "45K04  ",
-            "45K05  ",
-            "45K06  ",
-            "45K07  ",
-            "45K08  ",
-            "45K09  ",
-            "45K12  ",
-            "45K13  ",
-            "45K14  ",
-            "45K15  ",
-            "45K16  ",
-            "45K17  ",
-            "45K18  ",
-            "45K19  ",
-            "45K20  ",
-            "45K21  ",
-            "45K22  ",
-            "45K23  ",
-            "45K25  ",
-            "45K26  ",
-            "45K27  ",
-            "45K28  "});
             this.comboBox3.Location = new System.Drawing.Point(694, 106);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(215, 36);

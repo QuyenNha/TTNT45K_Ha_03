@@ -46,6 +46,9 @@ namespace HTQLHSSV.Forms
             dataGridView1.Columns[0].Width = 100;
             dataGridView1.Columns[1].Width = 200;
             dataGridView1.Columns[2].Width = 120;
+
+
+            
             con.Close();
         }
         private void LoadTheme()

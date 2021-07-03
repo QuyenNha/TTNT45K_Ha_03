@@ -21,13 +21,19 @@ namespace HTQLHSSV.Forms
 
         private void ThongKe_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'qLHSSVDataSet2.SINHVIEN' table. You can move, or remove it, as needed.
-            this.sINHVIENTableAdapter.Fill(this.qLHSSVDataSet2.SINHVIEN);
             this.reportViewer1.RefreshReport();
 
             //
-            string sql = "Select distinct DiaChi_TinhThanhPho from SINHVIEN";
-            txtTTP.DataSource = Database.Singleton.LoadData(sql);
+            string sql1 = "Select * from LOPSH";
+            txtML.DataSource = Database.Singleton.LoadData(sql1);
+            txtML.DisplayMember = "MaLop";
+
+            string sql2 = "Select * from KHOA";
+            txtTK.DataSource = Database.Singleton.LoadData(sql2);
+            txtTK.DisplayMember = "TenKhoa";
+
+            string sql3 = "Select distinct DiaChi_TinhThanhPho from SINHVIEN";
+            txtTTP.DataSource = Database.Singleton.LoadData(sql3);
             txtTTP.DisplayMember = "DiaChi_TinhThanhPho";
 
         }
@@ -66,7 +72,7 @@ namespace HTQLHSSV.Forms
             cmd.CommandText = "THONGKE2";
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Connection = con;
-            cmd.Parameters.Add(new SqlParameter("@TenKhoa", txtTKe.Text));
+            cmd.Parameters.Add(new SqlParameter("@TenKhoa", txtTK.Text));
 
             DataSet ds = new DataSet();
             SqlDataAdapter da = new SqlDataAdapter(cmd);

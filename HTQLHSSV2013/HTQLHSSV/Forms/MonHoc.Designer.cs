@@ -124,18 +124,7 @@
             this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
-            "Du lịch",
-            "Kế toán",
-            "Kinh doanh quốc tế",
-            "Kinh tế",
-            "Luật",
-            "Lý luận chính trị",
-            "Marketing",
-            "Ngân hàng",
-            "Quản trị kinh doanh",
-            "Tài chính",
-            "Thống kê - Tin học",
-            "Thương mại điện tử"});
+            "="});
             this.comboBox2.Location = new System.Drawing.Point(425, 206);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(215, 36);

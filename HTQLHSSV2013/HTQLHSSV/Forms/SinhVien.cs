@@ -60,6 +60,11 @@ namespace HTQLHSSV.Forms
             dataGridView1.Columns[7].Width = 75;
             dataGridView1.Columns[8].Width = 50;
 
+            // Lấy dữ liệu cho combobox mã lớp
+            string sql = "Select * from LOPSH";
+            comboBox3.DataSource = Database.Singleton.LoadData(sql);
+            comboBox3.DisplayMember = "MaLop";
+
             con.Close();
         }
         private void LoadTheme()
@@ -129,6 +134,9 @@ namespace HTQLHSSV.Forms
                 }
                 catch (Exception ex)
                 {
+                    if (textBox1.TextLength >12)
+                    MessageBox.Show("Mã sinh viên không được lớn hơn 12 số!", "THÔNG BÁO", MessageBoxButtons.OK);
+                    else
                     MessageBox.Show("Mã sinh viên đã tồn tại!", "THÔNG BÁO", MessageBoxButtons.OK);
                 }
                 string sQuery = "Select * from SINHVIEN";
