@@ -88,7 +88,7 @@ namespace HTQLHSSV.Forms
                || this.textBox6.TextLength == 0 || this.dateTimePicker1.Value == null || this.comboBox1.Text == null || this.comboBox3.Text == null
                  )
             {
-                MessageBox.Show("Vui lòng điền đầy đủ thông tin!", "THÔNG BÁO", MessageBoxButtons.OK);
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             else
@@ -135,9 +135,9 @@ namespace HTQLHSSV.Forms
                 catch (Exception ex)
                 {
                     if (textBox1.TextLength >12)
-                    MessageBox.Show("Mã sinh viên không được lớn hơn 12 số!", "THÔNG BÁO", MessageBoxButtons.OK);
+                        MessageBox.Show("Mã sinh viên không được lớn hơn 12 số!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     else
-                    MessageBox.Show("Mã sinh viên đã tồn tại!", "THÔNG BÁO", MessageBoxButtons.OK);
+                        MessageBox.Show("Mã sinh viên đã tồn tại!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 string sQuery = "Select * from SINHVIEN";
                 SqlDataAdapter adapter = new SqlDataAdapter(sQuery, con);

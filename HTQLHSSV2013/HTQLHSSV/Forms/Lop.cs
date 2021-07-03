@@ -78,7 +78,7 @@ namespace HTQLHSSV.Forms
             //Bước 1
             if (this.textBox1.TextLength == 0 || this.textBox2.TextLength == 0 || this.comboBox1.Text == null)
             {
-                MessageBox.Show("Vui lòng điền đầy đủ thông tin!", "THÔNG BÁO", MessageBoxButtons.OK);
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             else
@@ -111,7 +111,7 @@ namespace HTQLHSSV.Forms
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Mã lớp đã tồn tại!", "THÔNG BÁO", MessageBoxButtons.OK);
+                    MessageBox.Show("Mã lớp đã tồn tại!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 string sQuery = "Select * from LopSH";
                 SqlDataAdapter adapter = new SqlDataAdapter(sQuery, con);

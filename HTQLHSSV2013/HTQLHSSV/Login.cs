@@ -23,7 +23,7 @@ namespace HTQLHSSV
         {
             if (this.textBox1.TextLength == 0 || this.textBox2.TextLength == 0)
             {
-                MessageBox.Show("Bạn vui lòng điền đầy đủ thông tin!", "THÔNG BÁO", MessageBoxButtons.OK);
+                MessageBox.Show("Bạn vui lòng điền đầy đủ thông tin!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             else
@@ -44,10 +44,10 @@ namespace HTQLHSSV
                         this.Hide();
                         f.ShowDialog();
                         this.Show();
-                    }
+                    }   
                     else
                     {
-                        MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu!");
+                        MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         textBox2.Text = "";
                     }
                 }

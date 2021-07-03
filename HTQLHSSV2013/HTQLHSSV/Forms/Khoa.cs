@@ -78,7 +78,7 @@ namespace HTQLHSSV.Forms
             //Bước 1
             if (this.textBox1.TextLength == 0 || this.textBox2.TextLength == 0 || this.textBox3.TextLength == 0)
             {
-                MessageBox.Show("Vui lòng điền đầy đủ thông tin!", "THÔNG BÁO", MessageBoxButtons.OK);
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             else
@@ -111,7 +111,7 @@ namespace HTQLHSSV.Forms
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Tên khoa đã tồn tại!", "THÔNG BÁO", MessageBoxButtons.OK);
+                    MessageBox.Show("Tên khoa đã tồn tại!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 string sQuery = "Select * from KHOA";
                 SqlDataAdapter adapter = new SqlDataAdapter(sQuery, con);
