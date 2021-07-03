@@ -117,7 +117,10 @@ namespace HTQLHSSV.Forms
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Mã môn học đã tồn tại!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    if (textBox1.TextLength > 7)
+                        MessageBox.Show("Mã môn học không quá 7 kí tự!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    else
+                        MessageBox.Show("Mã môn học đã tồn tại", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 string sQuery = "Select * from MONHOC";
                 SqlDataAdapter adapter = new SqlDataAdapter(sQuery, con);
@@ -164,7 +167,8 @@ namespace HTQLHSSV.Forms
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi nhập dữ liệu: " + ex.Message, "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (textBox1.TextLength > 7)
+                    MessageBox.Show("Mã môn học không quá 7 kí tự!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             string sQuery = "Select * from MONHOC";
             SqlDataAdapter adapter = new SqlDataAdapter(sQuery, con);

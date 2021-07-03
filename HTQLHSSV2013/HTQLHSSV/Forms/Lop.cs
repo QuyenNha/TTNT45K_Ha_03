@@ -111,7 +111,10 @@ namespace HTQLHSSV.Forms
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Mã lớp đã tồn tại!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    if (textBox1.TextLength > 7)
+                        MessageBox.Show("Mã lớp không quá 7 kí tự!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    else
+                        MessageBox.Show("Mã lớp đã tồn tại", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 string sQuery = "Select * from LopSH";
                 SqlDataAdapter adapter = new SqlDataAdapter(sQuery, con);
@@ -153,7 +156,8 @@ namespace HTQLHSSV.Forms
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi nhập dữ liệu: " + ex.Message, "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (textBox1.TextLength > 7)
+                        MessageBox.Show("Mã lớp không quá 7 kí tự!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             string sQuery = "Select * from LopSH";
             SqlDataAdapter adapter = new SqlDataAdapter(sQuery, con);
@@ -188,7 +192,7 @@ namespace HTQLHSSV.Forms
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Bạn không thể xoá được vì lớp có chứa sinh viên!", "THÔNG BÁO", MessageBoxButtons.OK);
+                MessageBox.Show("Bạn không thể xoá được vì lớp có chứa sinh viên!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             string sQuery = "Select * from LopSH";
             SqlDataAdapter adapter = new SqlDataAdapter(sQuery, con);

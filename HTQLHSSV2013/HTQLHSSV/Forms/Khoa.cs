@@ -111,7 +111,10 @@ namespace HTQLHSSV.Forms
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Tên khoa đã tồn tại!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    if (textBox3.TextLength > 11)
+                        MessageBox.Show("Số điện thoại không quá 11 số!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    else
+                        MessageBox.Show("Tên khoa đã tồn tại!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 string sQuery = "Select * from KHOA";
                 SqlDataAdapter adapter = new SqlDataAdapter(sQuery, con);
@@ -153,7 +156,10 @@ namespace HTQLHSSV.Forms
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi nhập dữ liệu: " + ex.Message, "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (textBox3.TextLength > 11)
+                    MessageBox.Show("Số điện thoại không quá 11 số!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                else
+                    MessageBox.Show("Lỗi nhập dữ liệu", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             string sQuery = "Select * from KHOA";
             SqlDataAdapter adapter = new SqlDataAdapter(sQuery, con);
@@ -188,7 +194,7 @@ namespace HTQLHSSV.Forms
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Bạn không thể xoá được vì khoa có chứa chưa lớp!", "THÔNG BÁO", MessageBoxButtons.OK);
+                MessageBox.Show("Bạn không thể xoá được vì khoa có chứa chưa lớp!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             string sQuery = "Select * from KHOA";
             SqlDataAdapter adapter = new SqlDataAdapter(sQuery, con);

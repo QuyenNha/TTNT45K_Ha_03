@@ -28,7 +28,7 @@ namespace HTQLHSSV.Forms
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Xảy ra lỗi trong quá trình kết nối DB!1");
+                MessageBox.Show("Xảy ra lỗi trong quá trình kết nối DB!");
             }
 
             //Bước 2 - lấy dữ liệu 
@@ -100,7 +100,7 @@ namespace HTQLHSSV.Forms
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Xảy ra lỗi trong quá trình kết nối DB2!");
+                    MessageBox.Show("Xảy ra lỗi trong quá trình kết nối DB!");
                 }
                 //Bước 2 
                 // chuan bi du lieu
@@ -134,10 +134,15 @@ namespace HTQLHSSV.Forms
                 }
                 catch (Exception ex)
                 {
-                    if (textBox1.TextLength >12)
-                        MessageBox.Show("Mã sinh viên không được lớn hơn 12 số!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    if (textBox3.TextLength > 10)
+                        MessageBox.Show("Số điện thoại không được lớn hơn 10 số!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     else
-                        MessageBox.Show("Mã sinh viên đã tồn tại!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    {
+                        if (textBox1.TextLength > 12)
+                            MessageBox.Show("Mã sinh viên không được lớn hơn 12 số!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        else
+                            MessageBox.Show("Mã sinh viên đã tồn tại!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
                 string sQuery = "Select * from SINHVIEN";
                 SqlDataAdapter adapter = new SqlDataAdapter(sQuery, con);
@@ -192,7 +197,8 @@ namespace HTQLHSSV.Forms
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi nhập dữ liệu: " + ex.Message, "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (textBox3.TextLength > 10)
+                        MessageBox.Show("Số điện thoại không được lớn hơn 10 số!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             string sQuery = "Select * from SINHVIEN";
             SqlDataAdapter adapter = new SqlDataAdapter(sQuery, con);
@@ -214,7 +220,7 @@ namespace HTQLHSSV.Forms
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Xảy ra lỗi trong quá trình kết nối DB4!");
+                MessageBox.Show("Xảy ra lỗi trong quá trình kết nối DB!");
             }
             string sMaSV = textBox1.Text;
             string sQuery2 = "delete SINHVIEN where MaSV=@MaSV";
@@ -273,7 +279,7 @@ namespace HTQLHSSV.Forms
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Xảy ra lỗi trong quá trình kết nối DB5!");
+                MessageBox.Show("Xảy ra lỗi trong quá trình kết nối DB!");
             }
             string sMaSV = textBox7.Text;
             string sQuery = "select *from SINHVIEN where MaSV=@MaSV";
